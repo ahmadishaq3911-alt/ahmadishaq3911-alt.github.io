@@ -25,6 +25,9 @@ The public preview files are 312 pixels wide. Larger conceptual illustrations ar
 | assets/images/papers/in-fig8.png | IN-alloyed AlSb, Figure 8 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig8_HTML.png?) |
 | assets/images/papers/in-fig9.png | IN-alloyed AlSb, Figure 9 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig9_HTML.png?) |
 
+- `assets/images/papers/energy-fig5.png` and `energy-fig6.png`: unchanged Figures 5 (XRD) and 6 (SEM), extracted from the user-supplied Iqbal et al. (2022) PDF. https://doi.org/10.1016/j.inoche.2022.109201. Publisher rights retained.
+- `assets/images/electronics-1.png` through `electronics-4.png`: original circuit diagrams from the supplied digital electronics laboratory DOCX.
+
 ## Articles
 
 - Nabi et al. (2022), The European Physical Journal B 95, 55. https://doi.org/10.1140/epjb/s10051-022-00287-z
@@ -33,7 +36,7 @@ The public preview files are 312 pixels wide. Larger conceptual illustrations ar
 ## Other assets
 
 - `assets/images/quantum-hero.webp` and `assets/images/graphene-plan.webp`: generated with the built-in image tool for this website; exact prompts are in IMAGE_PROMPTS.md.
-- `assets/images/profile.webp`: portrait from the supplied website, converted to WebP.
-- `files/*.pdf`: original CV and résumé from the supplied folder.
+- `assets/images/profile.webp`: supplied My Photo.jpeg, converted to WebP.
+- `files/*.pdf`: one updated CV, following the supplied reference layout with blue hyperlinks.
 - `assets/explorer.js`: custom educational geometric model, not a computed materials structure.
 - `assets/images/favicon.svg`: custom typographic monogram.

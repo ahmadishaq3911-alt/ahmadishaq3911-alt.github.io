@@ -32,7 +32,7 @@ Double-click `index.html` to open it in your browser. The site’s navigation, i
 - A rotatable atomic model with 2D and 3D views, layer separation, a neighboring-layer toggle, keyboard controls, and optional rotation.
 - Filterable figure gallery with an accessible enlarged-image dialog.
 - Publication search and citation copying.
-- Mobile navigation, reduced-motion support, local CV and résumé downloads, social metadata, sitemap, and favicon.
+- Mobile navigation, reduced-motion support, one local CV download, social metadata, sitemap, and favicon.
 
 The original paper figures are the publisher’s publicly accessible 312-pixel previews. They have not been reconstructed or altered with AI. New illustrations are explicitly labeled conceptual. Replace the preview files with your original high-resolution exports later using the same filenames if those become available.
 
@@ -43,10 +43,12 @@ The original paper figures are the publisher’s publicly accessible 312-pixel p
 - Navigation, search, filters, and image dialog: `assets/site.js`.
 - Interactive educational model: `assets/explorer.js`.
 - Publication images: `assets/images/papers/`.
-- Replace CV and résumé PDFs in `files/`, preserving their filenames.
+- Replace `files/Muhammad_Ahmad_Ishaq_CV.pdf` to update the single downloadable CV.
 - If your GitHub username changes, update canonical URLs, Open Graph image URLs, `robots.txt`, and `sitemap.xml`.
 - See `sources.html`, `ASSET_CREDITS.md`, and `IMAGE_PROMPTS.md` for provenance.
 
 The original supplied website folder has not been changed. This package has not been pushed to GitHub or published.
 
 Updated using the full CV and transcript: 11 completed graduate courses, current internship focus, expanded project workflow, four original electronics diagrams, and an interactive full-adder demonstration. The transcript itself and its student identifiers are not included. The website now contains 17 HTML pages.
+
+Latest update: one reference-styled CV with blue hyperlinks, supplied seaside portrait, detailed assistantships, five interests, four attributed letter summaries, and two full-resolution supercapacitor figures.
