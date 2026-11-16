@@ -1,40 +1,43 @@
-# Muhammad Ahmad Ishaq - Personal Research & Industry Portfolio
+# Muhammad Ahmad Ishaq — Personal Website (Version 2)
 
-A single-page, mobile-friendly research and engineering portfolio personalized using the supplied four-page CV and subsequent research background.
+A responsive single-page research portfolio for both industry R&D and academic audiences. The website is designed to deploy as a static site, with no paid hosting, account keys, build tools, or JavaScript frameworks.
 
-## Preview locally
+**Live site address:** https://ahmadishaq3911-alt.github.io/
 
-Unzip the package. Double-click **index.html** to see the site in a browser. If you want to edit wording, open `index.html` with VS Code or Notepad. Styles are in `assets/style.css`.
+**Existing repository:** https://github.com/ahmadishaq3911-alt/ahmadishaq3911-alt.github.io
 
-## Publish for free with GitHub Pages
+## Replace the live version (no new repository required)
 
-1. Your GitHub username is **ahmadishaq3911-alt**.
-2. Open https://github.com/new and create a **public** repository named **ahmadishaq3911-alt.github.io**.
-3. Click **Add file > Upload files**. Upload the **contents of this folder** (not the outer folder), including `index.html`, `assets/` and `files/`. The `index.html` file must appear at the top level.
-4. Commit the files. Open **Settings > Pages > Build and deployment**. Choose **Deploy from a branch**, **main**, and **/(root)**. Click Save.
-5. The website will appear at `https://ahmadishaq3911-alt.github.io` once deployment completes.
+1. Download the **Version 2 ZIP** and extract it on your computer.
+2. Visit your existing [GitHub Pages repository](https://github.com/ahmadishaq3911-alt/ahmadishaq3911-alt.github.io).
+3. On the **Code** tab, use **Add file → Upload files** (or edit/replace individual files) and upload the **contents of this folder** into the repository's top level. Keep the folder names `assets` and `files` intact. `index.html` must remain in the root of the repository.
+4. Commit the changes to `main`. GitHub Pages already uses `main` and `/(root)`; no Pages settings changes are necessary.
+5. Revisit the [live website](https://ahmadishaq3911-alt.github.io/). If the old design remains, refresh with Ctrl+Shift+R or wait for the deployment to complete.
 
-GitHub instructions: https://docs.github.com/en/pages/quickstart
+> GitHub's web upload flow may show conflicts or require updates to files already present. If it does, replace `index.html` and the matching asset files individually, or use GitHub Desktop to synchronize the whole folder. Do not delete the repository, change its name, or upload only the ZIP archive.
 
-## Important edits before making public
+## Files
 
-- Proofread all content, especially CV dates, titles, publications, and skills. The uploaded CV was signed in August 2025 and contains a PhD start date that differs from later context.
-- Check the public-safe PDF drafts in `files/` and revise them as appropriate before applying.
-- Your original uploaded CV contains a full street address, phone numbers, DOB and references; that original PDF has **not** been copied into this site.
-- Profile photo was extracted from the supplied CV; replace it in `assets/profile.png` if you prefer a newer professional photo.
-- GitHub profile is linked: https://github.com/ahmadishaq3911-alt . Add individual project repository URLs after you create and document real public projects. Do not invent projects: gather real undergraduate electronics work and share only approved materials.
-- Get advisor / collaborator permission before uploading active unpublished research files, datasets, code, confidential work, or paper PDFs restricted by a publisher.
-- If your CV changes, replace PDFs and ensure the linked file names stay the same.
+- `index.html`: Complete website with navigation, research, projects, publication DOI links, teaching, CV and contact.
+- `assets/style.css`: Responsive styles and color system.
+- `assets/main.js`: Mobile navigation and dynamic copyright year.
+- `assets/heterostructure.svg`: **Conceptual** artwork. Not actual DFT data, structures or numerical plots.
+- `assets/profile.png`: Portrait from the user-provided CV.
+- `assets/favicon.svg`: Custom initials favicon.
+- `files/Muhammad_Ahmad_Ishaq_Industry_Resume.pdf`: One-page industry-oriented résumé.
+- `files/Muhammad_Ahmad_Ishaq_Academic_CV.pdf`: Two-page academic CV.
+- `.nojekyll`: Ensures GitHub Pages serves the static files as-is.
 
-## Website files
+## Research and publication accuracy
 
-- `index.html` - complete personal website
-- `assets/style.css` - styling
-- `assets/main.js` - mobile navigation
-- `assets/profile.png` - image extracted from user-supplied CV
-- `assets/favicon.svg` - monogram
-- `files/academic-cv-public-draft.pdf` - academic-oriented public CV draft
-- `files/industry-resume-public-draft.pdf` - industry-oriented public résumé draft
-- `project-templates/PROJECT_README_TEMPLATE.md` - template to document a future project
+- The current PhD project is described at a high level; unpublished datasets and simulation output have **not** been included.
+- Three cited publications are linked using DOI links. The 2023 In-alloyed AlSb item is listed under its **journal publication title** (rather than the earlier Research Square preprint title).
+- The past digital-electronics experience is presented as experience, not as invented completed GitHub projects.
+- CVs are newly formatted from the user-supplied CV plus confirmed context. **Proofread carefully before using them in applications** (dates, job titles, skills, publication authorship, research contributions). Academic CV is intentionally concise and is not a full faculty application dossier.
+- The site omits home street address, personal phone number, birth date, nationality and references.
 
-The two PDFs are editable only by regenerating them from your final source content; use your preferred document editor for future ongoing maintenance.
+## Add actual projects later
+
+Create a separate GitHub repository for each project that you can release. Include `README.md`, problem statement, software/tools, your contribution, methodology, results, instructions and selected figures or schematics. Only publish original or permitted material; ask collaborators/advisor before making active research public.
+
+Useful GitHub Pages documentation: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
