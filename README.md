@@ -1,31 +1,27 @@
-# Muhammad Ahmad Ishaq — Clean Academic Website
+# Muhammad Ahmad Ishaq — academic & industry portfolio
 
-A redesigned **white, minimal academic portfolio** inspired by the layout of the reference screenshot. It is a static GitHub Pages site and retains the existing URL:
+This is the website repository for **https://ahmadishaq3911-alt.github.io/**.
 
-**https://ahmadishaq3911-alt.github.io/**
+## Pages
 
-## Update your existing website
+- `index.html`: Homepage, biography and featured research
+- `research.html`: Doctoral research and methodology
+- `projects.html`: All projects, filterable by category
+- `projects/*.html`: An independent, detailed page for each project
+- `publications.html`: Verified papers and DOI links
+- `experience.html`: Education and research / teaching history
+- `teaching.html`: Teaching and academic service
+- `gallery.html`: Conceptual art and future authorized figures
+- `contact.html`: Professional email and links
+- `assets/style.css`: Design and layout
+- `assets/site.js`: Mobile navigation and project filter
+- `assets/images/`: Homepage and gallery illustrations
+- `files/`: Draft PDF résumé and academic CV; review before submitting applications
 
-1. Extract the ZIP.
-2. In GitHub, open `https://github.com/ahmadishaq3911-alt/ahmadishaq3911-alt.github.io`.
-3. Replace `index.html` in the repository with this one, and upload the `assets/` and `files/` folders (preserving their paths). The GitHub web uploader can upload a folder of files, or you can edit/commit the files separately.
-4. Commit the changes to the `main` branch.
-5. GitHub Pages is already configured in your existing repository. Refresh the page after deployment.
+## Publishing
 
-Do not upload this README unless you want it visible in the repository.
+Upload the **contents** of this website folder into the **root** of `ahmadishaq3911-alt/ahmadishaq3911-alt.github.io`. Since GitHub Pages is already configured to deploy `main` from `/(root)`, the update will deploy after committing changes.
 
-## Customize
+Read `HOW_TO_UPDATE.md` for editing project sections, adding figures, and linking new repositories.
 
-- Edit `index.html` for text, sections, and links.
-- Edit `assets/style.css` for colors and layout (accent color is `--rust`).
-- Replace `assets/graphene-wse2-schematic.svg` when an approved real figure is available.
-- The hero figure and the bands in the gallery are original *conceptual illustrations*, not published or computed scientific results.
-- `assets/profile.png` is preserved from the previous site (currently not displayed on the clean homepage).
-- `files/` contains previously prepared public-facing CV and résumé documents. Check them carefully for factual accuracy before applications.
-
-## Notes
-
-- No paid hosting or extra framework is needed.
-- No full address, birth date, phone numbers, or private references are included on the public site.
-- Coursework and project descriptions should be checked against the user's official transcript and records.
-- Academic work and images should be approved for public release, when required.
+**Ethical disclosure:** The QAHE/graphene illustration is conceptual, not evidence of a calculated or experimentally demonstrated QAH phase. Keep unpublished data private unless authorized to share.
