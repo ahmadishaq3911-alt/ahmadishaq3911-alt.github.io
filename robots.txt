@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ahmadishaq3911-alt.github.io/sitemap.xml

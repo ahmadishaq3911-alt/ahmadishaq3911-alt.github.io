@@ -1,0 +1,39 @@
+# Asset credits
+
+Downloaded from the public journal figure galleries on November 16, 2026. Published figures retain their original scientific content and original publisher attribution. This package does not assign a new license to them.
+
+The public preview files are 312 pixels wide. Larger conceptual illustrations are separate assets and do not replace or modify research data.
+
+| Local file | Publication figure | Original source |
+|---|---|---|
+| assets/images/papers/ga-fig1.png | GA-alloyed AlSb, Figure 1 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig1_HTML.png?) |
+| assets/images/papers/ga-fig2.png | GA-alloyed AlSb, Figure 2 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig2_HTML.png?) |
+| assets/images/papers/ga-fig3.png | GA-alloyed AlSb, Figure 3 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig3_HTML.png?) |
+| assets/images/papers/ga-fig4.png | GA-alloyed AlSb, Figure 4 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig4_HTML.png?) |
+| assets/images/papers/ga-fig5.png | GA-alloyed AlSb, Figure 5 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig5_HTML.png?) |
+| assets/images/papers/ga-fig6.png | GA-alloyed AlSb, Figure 6 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig6_HTML.png?) |
+| assets/images/papers/ga-fig7.png | GA-alloyed AlSb, Figure 7 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig7_HTML.png?) |
+| assets/images/papers/ga-fig8.png | GA-alloyed AlSb, Figure 8 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig8_HTML.png?) |
+| assets/images/papers/ga-fig9.png | GA-alloyed AlSb, Figure 9 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig9_HTML.png?) |
+| assets/images/papers/in-fig1.png | IN-alloyed AlSb, Figure 1 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig1_HTML.png?) |
+| assets/images/papers/in-fig2.png | IN-alloyed AlSb, Figure 2 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig2_HTML.png?) |
+| assets/images/papers/in-fig3.png | IN-alloyed AlSb, Figure 3 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig3_HTML.png?) |
+| assets/images/papers/in-fig4.png | IN-alloyed AlSb, Figure 4 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig4_HTML.png?) |
+| assets/images/papers/in-fig5.png | IN-alloyed AlSb, Figure 5 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig5_HTML.png?) |
+| assets/images/papers/in-fig6.png | IN-alloyed AlSb, Figure 6 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig6_HTML.png?) |
+| assets/images/papers/in-fig7.png | IN-alloyed AlSb, Figure 7 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig7_HTML.png?) |
+| assets/images/papers/in-fig8.png | IN-alloyed AlSb, Figure 8 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig8_HTML.png?) |
+| assets/images/papers/in-fig9.png | IN-alloyed AlSb, Figure 9 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig9_HTML.png?) |
+
+## Articles
+
+- Nabi et al. (2022), The European Physical Journal B 95, 55. https://doi.org/10.1140/epjb/s10051-022-00287-z
+- Nabi et al. (2023), Optical and Quantum Electronics 55, 799. https://doi.org/10.1007/s11082-023-05091-2
+
+## Other assets
+
+- `assets/images/quantum-hero.webp` and `assets/images/graphene-plan.webp`: generated with the built-in image tool for this website; exact prompts are in IMAGE_PROMPTS.md.
+- `assets/images/profile.webp`: portrait from the supplied website, converted to WebP.
+- `files/*.pdf`: original CV and résumé from the supplied folder.
+- `assets/explorer.js`: custom educational geometric model, not a computed materials structure.
+- `assets/images/favicon.svg`: custom typographic monogram.
