@@ -36,7 +36,7 @@ The public preview files are 312 pixels wide. Larger conceptual illustrations ar
 ## Other assets
 
 - `assets/images/quantum-hero.webp` and `assets/images/graphene-plan.webp`: generated with the built-in image tool for this website; exact prompts are in IMAGE_PROMPTS.md.
-- `assets/images/profile.webp`: supplied My Photo.jpeg, converted to WebP.
+- `assets/images/profile.webp`: supplied Professional Campus Portrait Photo.png, converted to WebP.
 - `files/*.pdf`: one updated CV, following the supplied reference layout with blue hyperlinks.
 - `assets/explorer.js`: custom educational geometric model, not a computed materials structure.
 - `assets/images/favicon.svg`: custom typographic monogram.

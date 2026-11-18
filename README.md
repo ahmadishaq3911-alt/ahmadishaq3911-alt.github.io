@@ -51,6 +51,6 @@ The original supplied website folder has not been changed. This package has not 
 
 Updated using the full CV and transcript: 11 completed graduate courses, current internship focus, expanded project workflow, four original electronics diagrams, and an interactive full-adder demonstration. The transcript itself and its student identifiers are not included. The website now contains 17 HTML pages.
 
-Latest update: one reference-styled CV with blue hyperlinks, supplied seaside portrait, detailed assistantships, five interests, four attributed letter summaries, and two full-resolution supercapacitor figures.
+Latest update: one reference-styled CV with blue hyperlinks, supplied professional campus portrait, detailed assistantships, five interests, four attributed letter summaries, and two full-resolution supercapacitor figures.
 
 Added the supplied Research Square preprint (version 2, January 13, 2023), with local PDF and DOI. Author names are bold in visible paper author lists, retaining the published name Muhammad Ahmad for AlSb papers.
