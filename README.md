@@ -54,3 +54,5 @@ Updated using the full CV and transcript: 11 completed graduate courses, current
 Latest update: one reference-styled CV with blue hyperlinks, supplied professional campus portrait, detailed assistantships, five interests, four attributed letter summaries, and two full-resolution supercapacitor figures.
 
 Added the supplied Research Square preprint (version 2, January 13, 2023), with local PDF and DOI. Author names are bold in visible paper author lists, retaining the published name Muhammad Ahmad for AlSb papers.
+
+November 2026 update: simplified Home / Projects / Publications / About / Contact navigation; new Arduino radar project page, five presentation figures, source PPTX, and two-point test results. Research, visual lab, coursework, and teaching remain accessible in the footer.
