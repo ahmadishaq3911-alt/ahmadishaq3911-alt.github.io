@@ -25,6 +25,10 @@ The public preview files are 312 pixels wide. Larger conceptual illustrations ar
 | assets/images/papers/in-fig8.png | IN-alloyed AlSb, Figure 8 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig8_HTML.png?) |
 | assets/images/papers/in-fig9.png | IN-alloyed AlSb, Figure 9 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig9_HTML.png?) |
 
+- `assets/images/proposal/*`: band plots and interface schematic extracted unchanged from the supplied Final Presentation Proposal Defense 2026.pptx, slide 29 (displayed slide number 19). The preliminary gap and next steps are stated on slide 33 (displayed slide number 23). The interface image is illustrative; literature results in the deck are not attributed to Ishaq. `files/PhD_Proposal_Defense_2026.pptx` is the original supplied deck.
+- Homepage styling and scroll effects adapted from the user-supplied index.html reference (Muhammad Waqas portfolio); all personal content and images replaced with Ishaq’s material.
+- `assets/images/electronics-breadboard.png`: original circuit photograph supplied by Muhammad Ahmad Ishaq on November 23, 2026; copied unchanged.
+- `files/Digital_Electronics_Laboratory.docx`: supplied digital coppy.docx, unchanged laboratory document.
 - `assets/images/radar/*`: extracted unchanged from user-supplied Radar.pptx, slides 7, 11, 14, 15; tutorial and other third-party source labels remain. `files/Radar_Project_Presentation.pptx` is the supplied presentation.
 - `assets/images/papers/energy-fig5.png` and `energy-fig6.png`: unchanged Figures 5 (XRD) and 6 (SEM), extracted from the user-supplied Iqbal et al. (2022) PDF. https://doi.org/10.1016/j.inoche.2022.109201. Publisher rights retained.
 - `assets/images/electronics-1.png` through `electronics-4.png`: original circuit diagrams from the supplied digital electronics laboratory DOCX.
