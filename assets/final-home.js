@@ -34,19 +34,19 @@
   var L = { x: 0, y: 0, k: 1 };
   function heroUpdate() {
     var vw = stage.clientWidth, vh = stage.clientHeight, y = Math.max(0, -hero.getBoundingClientRect().top);
-    var t = reduce ? 1 : .52 + .48 * clamp(y / (vh * .65)), p = 1 - Math.pow(1 - t, 3);
+    var t = reduce ? 1 : clamp(y / (vh * .95)), p = t * t * (3 - 2 * t);
     var sb = statusEl.offsetTop + statusEl.offsetHeight + 18, ct = ctaEl.offsetTop - 18;
     var cw = Math.min(clamp(vw * .32, 260, 460), (ct - sb) / .96, vw - 32), ch = cw * .96, cx = vw / 2, cy = (sb + ct) / 2;
     var top = cy - ch / 2, side = cx - cw / 2, bottom = vh - top - ch;
-    sigEl.style.top = (cy + ch * .27) + "px";
+    sigEl.style.top = lerp(vh * .70, cy + ch * .27, p) + "px";
     clip.style.clipPath = "inset(" + (top * p) + "px " + (side * p) + "px " + (bottom * p) + "px " + (side * p) + "px round " + (28 * p) + "px)";
-    var D = Math.max(vw, vh * 1.1);
-    var x0 = (vw - D) / 2, y0 = clamp(vh * .44 - .27 * D, vh - D, 0);
-    var k1 = cw * 1.04 / D, x1 = cx - D * k1 / 2, y1 = cy - D * k1 / 2;
+    var aspect = .8, D = Math.max(vw, vh * aspect), H = D / aspect;
+    var x0 = (vw - D) / 2, y0 = (vh - H) * .22;
+    var k1 = cw * 1.04 / D, x1 = cx - D * k1 / 2, y1 = cy - H * k1 * .43;
     L.k = lerp(1, k1, p); L.x = lerp(x0, x1, p); L.y = lerp(y0, y1, p);
-    layer.style.width = layer.style.height = D + "px";
+    layer.style.width = D + "px"; layer.style.height = H + "px";
     layer.style.transform = "translate(" + L.x + "px," + L.y + "px) scale(" + L.k + ")";
-    marquee.style.opacity = 1;
+    marquee.style.opacity = p; stage.style.setProperty("--reveal", p); stage.style.setProperty("--photo-shade", (1-p)*.22);
     sigRect.setAttribute("width", 640);
   }
 

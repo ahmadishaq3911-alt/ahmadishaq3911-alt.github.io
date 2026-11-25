@@ -1,58 +1,39 @@
-# Muhammad Ahmad Ishaq — research portfolio
+# Muhammad Ahmad Ishaq — academic portfolio
 
-A complete static academic website, ready for GitHub Pages. No package installation, API key, subscription, or build step is needed.
+A static website ready for GitHub Pages, with no build step or API key required.
 
-## Publish to your GitHub Pages repository
+## Current design
 
-1. Extract `website-ready-for-github.zip` on your computer.
-2. Open your repository: [ahmadishaq3911-alt.github.io](https://github.com/ahmadishaq3911-alt/ahmadishaq3911-alt.github.io).
-3. Choose **Add file → Upload files** and upload the extracted **contents**. `index.html`, `assets`, `files`, and `projects` must appear directly at the repository root. Upload the files and folders, not the ZIP or an enclosing folder.
-4. Commit the uploaded changes. Existing files with matching paths are replaced by this redesigned version.
-5. Open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select your publishing branch (usually `main`), choose **/(root)**, and save.
-6. GitHub will publish to [https://ahmadishaq3911-alt.github.io/](https://ahmadishaq3911-alt.github.io/). The deployment may take several minutes. Check the repository’s Actions tab if it does not appear.
+The supplied academic reference inspired the gradient background, circular portrait, two-column biography, education cards, purple accents, and navigation. All personal content and the portrait are Ishaq’s own. The new homepage includes four attributed recommendation-letter summaries with their dates, identified as paraphrases.
 
-Keep the included `.nojekyll` file. If Windows hides it, the other static files still work with the normal GitHub Pages build; including it tells GitHub to serve the site directly.
+- Responsive desktop and phone layouts, with a collapsible menu.
+- Search across research, publications, projects, teaching, and recommendations.
+- Light/dark theme switch, remembered in the browser.
+- 18 HTML pages, publications, downloadable CV, and original research figures.
+- All 36 proposal slides and 17 radar slides, with navigation, expanded view, and slide text.
+- Interactive educational atomic model and digital-logic demonstration.
 
-These steps follow [GitHub’s publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and [GitHub Pages quickstart](https://docs.github.com/en/pages/quickstart).
+## Upload using the two packages
 
-## Preview on your computer
+1. Extract `website-upload-2-slides.zip` and upload the **assets folder inside it** to the repository root. Commit this batch.
+2. Extract `website-upload-1-main.zip` and upload **all of its contents** to the same repository root. Commit this batch.
+3. Keep `index.html`, `assets`, `files`, and `projects` at the root, not inside an extra folder. Upload extracted contents, not the ZIP files.
+4. If the previous slide package is already uploaded, only the main package needs updating; the 53 slide images are unchanged.
 
-Double-click `index.html` to open it in your browser. The site’s navigation, images, filters, search, and 3D model work locally. Clipboard behavior can depend on your browser; copying works best on the published HTTPS site.
+Each upload batch contains fewer than 100 files. The shared assets directory is intentional: the batches contain different files within it. A complete `website-ready-for-github.zip` is also supplied for local preview or Git-based upload.
 
-## Included pages
+Repository: https://github.com/ahmadishaq3911-alt/ahmadishaq3911-alt.github.io
+Expected published address: https://ahmadishaq3911-alt.github.io/
+This package does not itself publish or change the live site.
 
-- Home, Research, Publications, Visual lab, About, Teaching, Coursework, Contact, and Projects.
-- Six individual project pages covering graphene interfaces, Ga-alloyed AlSb, In-alloyed AlSb, hybrid electrode materials, PFAS-free paper, and electronics.
-- Figure sources and a 404 page.
+## Preview and maintain
 
-## Visuals and interactions
+Open `index.html` locally, or serve this directory with a static HTTP server. Clipboard copying works best on the published HTTPS site.
 
-- Two new detailed conceptual illustrations, optimized as local WebP images.
-- Eighteen original published figure previews: Figures 1–9 from each AlSb paper.
-- A rotatable atomic model with 2D and 3D views, layer separation, a neighboring-layer toggle, keyboard controls, and optional rotation.
-- Filterable figure gallery with an accessible enlarged-image dialog.
-- Publication search and citation copying.
-- Mobile navigation, reduced-motion support, one local CV download, social metadata, sitemap, and favicon.
+- Current theme: `assets/academic.css` and `assets/academic.js`.
+- Shared base styles: `assets/final-home.css`, `assets/final-detail.css`, and `assets/polish.css`.
+- Slides: `assets/slides/`, `assets/decks.js`, and `assets/slideshow.js`.
+- Educational atomic model: `assets/explorer.js`.
+- The old `assets/final-home.js` file is retained but is not loaded by the new homepage.
 
-The original paper figures are the publisher’s publicly accessible 312-pixel previews. They have not been reconstructed or altered with AI. New illustrations are explicitly labeled conceptual. Replace the preview files with your original high-resolution exports later using the same filenames if those become available.
-
-## Editing
-
-- Edit page text directly in the corresponding `.html` file.
-- Shared visual styling: `assets/style.css`.
-- Navigation, search, filters, and image dialog: `assets/site.js`.
-- Interactive educational model: `assets/explorer.js`.
-- Publication images: `assets/images/papers/`.
-- Replace `files/Muhammad_Ahmad_Ishaq_CV.pdf` to update the single downloadable CV.
-- If your GitHub username changes, update canonical URLs, Open Graph image URLs, `robots.txt`, and `sitemap.xml`.
-- See `sources.html`, `ASSET_CREDITS.md`, and `IMAGE_PROMPTS.md` for provenance.
-
-The original supplied website folder has not been changed. This package has not been pushed to GitHub or published.
-
-Updated using the full CV and transcript: 11 completed graduate courses, current internship focus, expanded project workflow, four original electronics diagrams, and an interactive full-adder demonstration. The transcript itself and its student identifiers are not included. The website now contains 17 HTML pages.
-
-Latest update: one reference-styled CV with blue hyperlinks, supplied professional campus portrait, detailed assistantships, five interests, four attributed letter summaries, and two full-resolution supercapacitor figures.
-
-Added the supplied Research Square preprint (version 2, January 13, 2023), with local PDF and DOI. Author names are bold in visible paper author lists, retaining the published name Muhammad Ahmad for AlSb papers.
-
-November 2026 update: simplified Home / Projects / Publications / About / Contact navigation; new Arduino radar project page, five presentation figures, source PPTX, and two-point test results. Research, visual lab, coursework, and teaching remain accessible in the footer.
+Research figures and presentation content retain their source attributions; see ASSET_CREDITS.md and the Figure credits page. Slides are static renderings of the original PowerPoint decks. Preliminary research results and future plans remain identified. The educational model is not a calculated atomic structure.
