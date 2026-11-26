@@ -174,3 +174,341 @@ html[data-theme=dark] .slide-controls button[data-slide-next] {
 @media (prefers-reduced-motion: reduce) {
   .cv-download, .profile-socials a { transition: none; }
 }
+
+
+/* ====================================================================
+   REFERENCE-STYLE ACADEMIC HOMEPAGE · 26 NOV 2026
+   Full-bleed academic layout with distinctive navy + sage + bronze theme.
+   Does NOT modify copy, portrait, slides, links, or typewriter JavaScript.
+   Only the presentation layer changes. This section intentionally comes
+   last so it overrides the old centered, rounded-shell presentation.
+   ==================================================================== */
+:root {
+  --bg: #fbfcfb;
+  --paper: #fbfcfb;
+  --card: #ffffff;
+  --ink: #172839;
+  --text: #334754;
+  --muted: #657783;
+  --rule: #e0e9e8;
+  --line: #e0e9e8;
+  --green: #385d58;
+  --green-deep: #294b47;
+  --green-soft: #e9f0ec;
+  --accent: #385d58;
+  --surface: #f5f8f6;
+  --bronze: #b58558;
+}
+html { scroll-padding-top: 90px; }
+body,
+body.academic-home {
+  padding: 0 !important;
+  margin: 0;
+  background: #f7f9f7 !important;
+}
+.academic-shell {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+.academic-header {
+  min-height: 79px;
+  padding: 0 clamp(16px,2.4vw,42px);
+  gap: 24px;
+  background: rgba(246,249,249,.98) !important;
+  border-bottom: 1px solid #dce7e6;
+  box-shadow: 0 2px 9px rgba(20,43,50,.055);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.academic-brand {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -.028em;
+  color: var(--ink);
+}
+.academic-nav { gap: clamp(5px,1vw,15px); }
+.academic-nav a {
+  padding: 14px 12px;
+  border-radius: 11px;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.2;
+  transition: background-color .18s ease,color .18s ease;
+}
+.academic-nav a:hover { color: var(--green-deep); background: #eaf0ed; }
+.academic-nav a.active {
+  background: #e1eeea;
+  color: #2e5551;
+  box-shadow: inset 0 -3px 0 var(--bronze);
+}
+.academic-tools button { color: var(--ink); }
+.academic-tools button:hover { background: #e3efea; }
+
+/* Airy reference-like full-width biography section. */
+.academic-bio {
+  position: relative;
+  grid-template-columns: minmax(300px,390px) minmax(0,865px);
+  gap: clamp(48px,5vw,86px);
+  justify-content: center;
+  align-items: start;
+  padding: clamp(70px,6vw,100px) clamp(28px,5vw,92px) 88px;
+  min-height: max(745px,calc(100svh - 79px));
+  background:
+    radial-gradient(ellipse at 19% 16%, rgba(190,229,219,.72), transparent 51%),
+    radial-gradient(ellipse at 96% 87%, rgba(226,224,241,.60), transparent 56%),
+    radial-gradient(ellipse at 72% 7%, rgba(247,248,244,.96), transparent 55%),
+    linear-gradient(125deg,#e7f4f0 0%,#f9fbf9 55%,#f0eff8 100%) !important;
+  isolation: isolate;
+}
+/* Very subtle research/particle detail: no extra image assets needed. */
+.academic-bio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle 2px at 10% 43%,rgba(87,153,144,.58) 95%,transparent 100%),
+    radial-gradient(circle 2.5px at 33% 36%,rgba(87,153,144,.45) 95%,transparent 100%),
+    radial-gradient(circle 2px at 56% 20%,rgba(91,154,142,.48) 95%,transparent 100%),
+    radial-gradient(circle 2px at 70% 55%,rgba(95,147,135,.38) 95%,transparent 100%),
+    radial-gradient(circle 2.5px at 95% 18%,rgba(101,156,149,.40) 95%,transparent 100%),
+    radial-gradient(circle 2px at 30% 85%,rgba(172,141,100,.36) 95%,transparent 100%),
+    radial-gradient(circle 1.5px at 83% 72%,rgba(96,151,140,.35) 95%,transparent 100%);
+  pointer-events: none;
+  z-index: -1;
+  opacity: .82;
+  animation: academic-dots-drift 15s ease-in-out infinite alternate;
+}
+@keyframes academic-dots-drift {
+  from { transform: translateY(0); opacity: .7; }
+  to { transform: translateY(-9px); opacity: 1; }
+}
+.profile-column { text-align: center; padding-top: 6px; }
+.portrait-ring {
+  width: 208px;
+  height: 208px;
+  border: 5px solid white;
+  margin-bottom: 22px;
+  box-shadow: 0 15px 30px -20px rgba(37,67,64,.30);
+}
+.portrait-mark {
+  color: var(--bronze);
+  border: 1px solid #ecf0ee;
+  box-shadow: 0 5px 14px rgba(37,67,64,.1);
+}
+.profile-column h1 {
+  font-size: clamp(40px,3.25vw,54px);
+  line-height: 1.10;
+  font-weight: 800;
+  margin: 0 0 22px;
+  letter-spacing: -.046em;
+  color: var(--ink);
+}
+.profile-role {
+  color: #355d58;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+.profile-university { font-size: 18px; color: #405668; }
+.academic-home .profile-focus {
+  color: #3a6a61 !important;
+  font-size: clamp(18px,1.5vw,22px) !important;
+  line-height: 1.5 !important;
+  margin: 13px auto 5px !important;
+}
+.academic-home .profile-typing-cursor { color: var(--bronze) !important; }
+.profile-location { font-size: 14px; color: #6e7f8a; margin: 17px 0 28px; }
+.profile-socials { gap: 16px; margin-bottom: 20px; }
+.profile-socials a {
+  width: 46px;
+  height: 46px;
+  background: rgba(255,255,255,.94);
+  border: 1px solid #e5eeeb;
+  color: #445569;
+  box-shadow: 0 4px 9px rgba(32,50,59,.09);
+}
+.profile-socials a:hover { color: var(--green-deep); transform: translateY(-3px); }
+.profile-contact { color: #375d57; }
+.bio-column { min-width: 0; padding-top: 4px; }
+.icon-heading {
+  gap: 18px;
+  font-size: 29px;
+  line-height: 1.25;
+  margin-bottom: 29px;
+}
+.icon-heading > span {
+  width: 47px;
+  height: 47px;
+  color: #35645d;
+  background: rgba(219,241,234,.88);
+}
+.bio-text {
+  max-width: 800px;
+  font-size: 17px;
+  line-height: 1.76;
+  color: #344653;
+}
+.cv-download {
+  padding: 16px 29px;
+  border-radius: 12px;
+  background: linear-gradient(110deg,#315f5b 0%,#416f65 100%);
+  box-shadow: 0 9px 17px rgba(30,77,68,.16);
+  margin-top: 34px;
+  font-size: 16px;
+}
+.cv-download:hover { filter: brightness(1.08); }
+.education-heading { margin: 60px 0 30px; }
+.education-cards { gap: 21px; }
+.education-cards article {
+  min-height: 172px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 24px 20px;
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(255,255,255,.92);
+  border-radius: 15px;
+  box-shadow: 0 6px 22px rgba(36,63,74,.06);
+}
+.degree-icon {
+  background: #426c65;
+  width: 42px;
+  height: 42px;
+  box-shadow: 0 4px 12px rgba(39,83,77,.13);
+}
+.education-cards h3 { color: var(--ink); font-size: 16px; font-weight: 700; }
+.education-cards p { color: #4b5a68; font-size: 14px; }
+.education-cards small { color: #6e7b87; font-size: 12px; }
+
+/* Details and project pages also lose the obsolete floating frame. */
+.academic-detail .page-hero {
+  background: radial-gradient(ellipse at 12% 0%,#e4f1ec,transparent 62%),
+              radial-gradient(ellipse at 91% 85%,#f0edf7,transparent 68%),
+              #fbfcfb;
+}
+.academic-detail .contact-band { background: #e9f0eb; }
+.academic-detail .contact-band h2 { color: var(--ink); }
+.academic-home .contact { background: var(--bg); }
+
+/* Adapt to laptop and phone while retaining the same content order. */
+@media (max-width: 1400px) {
+  .academic-bio {
+    grid-template-columns: minmax(280px,335px) minmax(0,790px);
+    gap: clamp(30px,3vw,58px);
+    padding: 72px 5% 72px;
+  }
+  .education-cards { gap: 13px; }
+  .education-cards article { padding: 20px 15px; }
+}
+@media (max-width: 1200px) {
+  .academic-header { min-height: 70px; }
+  .academic-nav { top: 70px; }
+  .academic-bio {
+    grid-template-columns: minmax(250px,295px) minmax(0,1fr);
+    gap: 28px;
+    padding: 58px 5% 64px;
+    min-height: auto;
+  }
+  .profile-column h1 { font-size: 37px; }
+  .profile-role { font-size: 21px; }
+  .education-cards article { display: block; }
+  .degree-icon { margin-bottom: 11px; }
+}
+@media (max-width: 900px) {
+  .academic-header { min-height: 68px; }
+  .academic-nav { top: 68px; background: #f7faf8; }
+  .academic-bio {
+    grid-template-columns: minmax(0,1fr);
+    gap: 46px;
+    padding: 54px 7% 68px;
+    min-height: 0;
+  }
+  .portrait-ring { width: 190px; height: 190px; }
+  .profile-column h1 { font-size: 43px; }
+  .bio-column { padding-top: 0; }
+  .education-cards { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .education-cards article { display: block; }
+  .icon-heading { font-size: 27px; }
+}
+@media (max-width: 720px) {
+  .education-cards { grid-template-columns: 1fr; }
+  .education-cards article { display: flex; min-height: 0; padding: 20px; }
+  .degree-icon { margin-bottom: 0; }
+  .bio-text { font-size: 16px; }
+  .profile-column h1 { font-size: 39px; }
+}
+@media (max-width: 620px) {
+  .academic-header { min-height: 64px; padding-inline: 16px; }
+  .academic-nav { top: 64px; }
+  .academic-brand { font-size: 14px; }
+  .academic-bio { padding: 43px 22px 60px; gap: 40px; }
+  .portrait-ring { width: 176px; height: 176px; }
+  .profile-column h1 { font-size: 36px; }
+  .profile-role { font-size: 20px; }
+  .profile-university { font-size: 16px; }
+  .icon-heading { font-size: 25px; }
+  .cv-download { padding: 13px 22px; }
+  .academic-home .wrap, .academic-detail .wrap { padding-inline: 22px; }
+}
+
+/* Dark toggle stays functional with the lighter, full-width layout. */
+html[data-theme=dark] {
+  --bg: #172622;
+  --paper: #172622;
+  --card: #20352e;
+  --ink: #eef4ef;
+  --text: #d5e3dd;
+  --muted: #b0c7ba;
+  --rule: #38564a;
+  --line: #38564a;
+  --accent: #b4d8c5;
+  --green: #b4d8c5;
+  --green-deep: #8fbba7;
+  --green-soft: #2a4438;
+  --surface: #1d3129;
+  --bronze: #d0aa7b;
+}
+html[data-theme=dark] body,
+html[data-theme=dark] body.academic-home { background: #172622 !important; }
+html[data-theme=dark] .academic-header {
+  background: rgba(24,40,33,.98) !important;
+  border-color: #3b574c;
+}
+html[data-theme=dark] .academic-nav a.active { background: #2d4a3e; color: #d5eddf; }
+html[data-theme=dark] .academic-nav a:hover { background: #294337; color: #d5eddf; }
+html[data-theme=dark] .academic-bio {
+  background: radial-gradient(ellipse at 13% 10%,#2c4d41,transparent 59%),
+              radial-gradient(ellipse at 91% 83%,#343b48,transparent 68%),
+              #1a2d29 !important;
+}
+html[data-theme=dark] .bio-text,
+html[data-theme=dark] .profile-university,
+html[data-theme=dark] .education-cards p { color: var(--text); }
+html[data-theme=dark] .education-cards small,
+html[data-theme=dark] .profile-location { color: var(--muted); }
+html[data-theme=dark] .profile-role,
+html[data-theme=dark] .academic-home .profile-focus { color: #bbdfca !important; }
+html[data-theme=dark] .academic-home .profile-typing-cursor { color: #d0aa7b !important; }
+html[data-theme=dark] .education-cards article,
+html[data-theme=dark] .profile-socials a {
+  background: rgba(35,56,49,.94);
+  border-color: #3d584b;
+}
+html[data-theme=dark] .academic-nav { background: #1c3029; }
+html[data-theme=dark] .cv-download { background: linear-gradient(110deg,#426f5e,#3d7666); }
+html[data-theme=dark] .degree-icon { background: #4e806d; }
+html[data-theme=dark] .icon-heading > span { background: #2d4e3e; }
+html[data-theme=dark] .academic-detail .page-hero { background: #1b302a; }
+html[data-theme=dark] .academic-detail .contact-band { background: #29453a; }
+
+@media (prefers-reduced-motion: reduce) {
+  .academic-bio::before { animation: none; }
+}
