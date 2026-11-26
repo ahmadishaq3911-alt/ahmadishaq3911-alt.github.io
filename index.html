@@ -170,6 +170,31 @@ document.addEventListener('DOMContentLoaded',function(){
  });
 });
 </script>
+<style id="rain-detector-three-card-layout">
+/* Rain Detector addition: three equal project cards, responsive and scoped. */
+body.academic-home #hands-on .lab-projects-container {
+  max-width:1140px !important;
+}
+body.academic-home #hands-on .lab-projects-grid {
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:20px !important;
+  align-items:stretch !important;
+}
+body.academic-home #hands-on .lab-project-card {min-width:0 !important; height:100% !important;}
+body.academic-home #hands-on .lab-project-photo {aspect-ratio:16 / 10 !important; overflow:hidden !important;}
+body.academic-home #hands-on .lab-project-photo img {width:100% !important; height:100% !important; object-fit:cover !important;}
+body.academic-home #hands-on .lab-project-content {display:flex !important; flex-direction:column !important; flex:1 !important;}
+body.academic-home #hands-on .lab-project-content h3 {font-size:1.17rem !important;}
+body.academic-home #hands-on .lab-project-content p {font-size:.88rem !important; line-height:1.66 !important;}
+body.academic-home #hands-on .lab-project-bottom {margin-top:auto !important;}
+@media (max-width:960px) {
+  body.academic-home #hands-on .lab-projects-grid {grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+}
+@media (max-width:640px) {
+  body.academic-home #hands-on .lab-projects-grid {grid-template-columns:1fr !important;max-width:510px !important;margin-left:auto !important;margin-right:auto !important;}
+}
+</style>
 </head>
 
 
@@ -422,6 +447,19 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
 </a>
+
+<a aria-label="Read about the Rain Detector student mentorship project and exhibition result" class="lab-project-card" href="projects/rain-detector.html">
+  <div class="lab-project-photo">
+    <img alt="University of Chenab Physics students demonstrating their Rain Detector project at the inter-university exhibition" width="1280" height="671" loading="lazy" decoding="async" src="assets/images/rain-detector-exhibition.jpg"/>
+  </div>
+  <div class="lab-project-content">
+    <span class="lab-project-category">Student Mentorship · Sensor Electronics</span>
+    <h3>Rain Detector — Student Project</h3>
+    <p>Mentored University of Chenab Physics students demonstrating a simple rain-sensing alert prototype. Their team placed 4th among 28 groups at the 2022 inter-university exhibition.</p>
+    <div class="lab-project-bottom"><span>Rain Sensing · Buzzer · Student Mentorship</span><span aria-hidden="true" class="lab-project-arrow">↗</span></div>
+  </div>
+</a>
+
 
 
 </div>
