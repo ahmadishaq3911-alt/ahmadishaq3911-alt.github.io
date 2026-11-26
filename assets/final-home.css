@@ -227,3 +227,21 @@
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;padding:40px 0}.about-grid p{margin:0 0 18px}.about-grid h3{font-size:32px;margin-bottom:14px}.more-links{display:flex;gap:20px;flex-wrap:wrap}.contact{padding-top:100px}.contact h2{font-size:clamp(55px,8vw,100px)}.links{flex-wrap:wrap}.avatar{object-fit:cover;object-position:center 22%}.skip{position:fixed;left:16px;top:-80px;z-index:100;background:white;padding:12px}.skip:focus{top:8px}.reveal{opacity:1;transform:none}
 @media(max-width:860px){.exp-sticky{position:relative;height:auto;overflow:visible}.exp-track{display:grid;gap:20px;padding:30px 24px;transform:none!important}.xp{width:100%;min-width:0}.exp-rail{display:none}.exp{padding-top:70px}.about-grid{grid-template-columns:1fr;gap:22px}.project .media img{height:280px}.paper{grid-template-columns:1fr;gap:0}.block{padding-top:65px}.hero{height:140vh}.signature{width:320px}.statement{padding:55px 24px 65px}.status{max-width:calc(100% - 28px);white-space:normal;text-align:center;justify-content:center}.b1{left:4%;top:155px}.hero-name{font-size:12px}.sec-head h2{font-size:56px}}
 @media(prefers-reduced-motion:reduce){.hero{height:100svh}.exp{height:auto!important}.exp-sticky{position:relative;height:auto}.exp-track{display:flex;flex-wrap:wrap;transform:none!important}.xp{flex:1 1 300px}.exp-rail{display:none}}
+
+/* Coordinated color tokens for legacy homepage components.
+   Academic theme (academic.css) is loaded later and defines the final look. */
+:root {
+  --bg: #fbfcfa;
+  --card: #ffffff;
+  --ink: #1c2d3a;
+  --text: #364650;
+  --muted: #65757d;
+  --rule: #dce6de;
+  --grey: #e2eae3;
+  --green: #355b4b;
+  --green-deep: #294838;
+  --green-soft: #e7efe9;
+}
+.inline-link, .paper a, .links a, .more-links a { color: #355b4b; }
+.project .result { border-left-color: #355b4b; }
+.result strong { color: #355b4b; }

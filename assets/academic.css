@@ -15,3 +15,162 @@ html[data-theme=dark]{color-scheme:dark;--bg:#171823;--paper:#171823;--card:#222
 @media(min-width:901px) and (max-width:1200px){.academic-header{justify-content:space-between;min-height:65px}.academic-brand{max-width:none;font-size:16px;white-space:nowrap}.academic-tools .academic-menu{display:flex}.academic-nav{display:none;position:absolute;left:0;right:0;top:65px;flex-direction:column;align-items:stretch;gap:0;padding:12px 24px 20px;background:var(--bg);border-bottom:1px solid var(--rule)}.academic-nav.open{display:flex}.academic-nav a{padding:10px;font-size:16px}}
 
 .academic-detail h1 em,.academic-detail h2 em,.academic-detail .eyebrow{color:var(--accent)}.academic-detail .contact-band p:not(.eyebrow){color:var(--muted)}.academic-detail .button.light{background:var(--bg);color:var(--accent)}
+
+/* ==============================================================
+   MUHAMMAD AHMAD ISHAQ · 2026 PALETTE REFRESH
+   Theme: Forest sage / deep navy / muted bronze
+   Intentional color-only overrides: preserve structure, typewriter,
+   slide embeds, responsive layouts, and original class names.
+   ============================================================== */
+:root {
+  --bg: #fbfcfa;
+  --paper: #fbfcfa;
+  --card: #ffffff;
+  --ink: #1c2d3a;
+  --text: #364650;
+  --muted: #65757d;
+  --rule: #dce6de;
+  --line: #dce6de;
+  --green: #355b4b;
+  --green-deep: #294838;
+  --green-soft: #e7efe9;
+  --accent: #355b4b;
+  --surface: #f4f7f3;
+  --bronze: #a97b49;
+}
+
+/* Replace the orange/pink/violet outer surround with a calm gradient. */
+body {
+  color: var(--text);
+  background: linear-gradient(125deg, #d7e4dc 0%, #e8ede8 36%, #f1e8dc 74%, #dce8ed 100%);
+  background-attachment: fixed;
+}
+.academic-shell {
+  background: var(--bg);
+  box-shadow: 0 26px 58px -34px rgba(28,45,58,.26);
+}
+.academic-header {
+  background: #fcfdfa;
+  border-color: var(--rule);
+}
+.academic-brand { color: var(--ink); }
+.academic-nav a:hover,
+.academic-nav a.active { color: var(--accent); }
+.academic-nav a.active {
+  box-shadow: inset 0 -3px 0 var(--bronze);
+}
+.academic-tools button:hover { background: var(--green-soft); }
+
+/* Soft sage/sand/stone inner background, distinct from reference teal. */
+.academic-bio {
+  background:
+    radial-gradient(ellipse at 13% 10%, #dceae1 0%, transparent 57%),
+    radial-gradient(ellipse at 87% 24%, #f4eee3 0%, transparent 58%),
+    radial-gradient(ellipse at 42% 100%, #e8edf1 0%, transparent 61%),
+    #fafbf8;
+}
+.portrait-ring { box-shadow: 0 17px 30px -16px rgba(38,67,57,.35); }
+.portrait-mark { color: var(--bronze); }
+.profile-column h1 { color: var(--ink); }
+.profile-role { color: var(--accent); }
+.profile-university { color: var(--text); }
+.profile-location { color: var(--muted); }
+.profile-socials a { color: var(--ink); border-color: var(--rule); }
+.profile-socials a:hover { color: var(--bronze); }
+.profile-contact { color: var(--accent); }
+
+/* The existing typewriter text is defined in index.html's internal CSS,
+   so the targeted !important declarations intentionally override its
+   previous teal color WITHOUT changing its typing animation. */
+.academic-home .profile-focus { color: var(--accent) !important; }
+.academic-home .profile-typing-cursor { color: var(--bronze) !important; }
+
+.icon-heading > span { background: #e5eee7; color: var(--accent); }
+.bio-text { color: var(--text); }
+.cv-download {
+  background: linear-gradient(112deg, #355b4b 0%, #456e5d 100%);
+  box-shadow: 0 8px 19px rgba(53,91,75,.17);
+}
+.education-cards article {
+  background: rgba(255,255,255,.8);
+  border: 1px solid #e1e8e0;
+  box-shadow: 0 6px 18px rgba(32,49,52,.055);
+}
+.degree-icon { background: #355b4b; box-shadow: 0 3px 9px rgba(53,91,75,.19); }
+.education-cards p { color: var(--text); }
+.education-cards small { color: var(--muted); }
+
+/* Secondary pages / project sections / presentation controls. */
+.tag, .skills li { background: var(--surface); border-color: var(--rule); }
+.btn.green, .button.primary { background: var(--accent); border-color: var(--accent); }
+.btn:not(.green) { background: var(--card); color: var(--accent); border-color: var(--rule); }
+.project .result { background: var(--green-soft); border-color: var(--accent); }
+.segmented { background: #e7eee8; }
+.segmented button { color: #355b4b; }
+.model-actions button { border-color: #bfd0c4; color: var(--accent); }
+.recommendation-grid article { background: var(--surface); border-top-color: var(--bronze); }
+.recommendation-section .eyebrow, .xp .yr { color: var(--accent); }
+.slide-topline { background: var(--green-soft); }
+.slide-progress i { background: var(--bronze); }
+.academic-detail .page-hero {
+  background: radial-gradient(ellipse at 9% 0%, #e6f0e9, transparent 62%),
+              radial-gradient(ellipse at 87% 90%, #f4eadd, transparent 72%),
+              var(--bg);
+}
+.academic-detail .contact-band { background: #e6eee6; color: var(--ink); }
+.academic-detail .contact-band h2 { color: var(--ink); }
+.academic-detail .button.light { background: var(--card); color: var(--accent); }
+.academic-search::backdrop { background: rgba(22,39,45,.58); }
+.academic-home .toast { background: #233c32; color: #fff; }
+:focus-visible { outline-color: var(--bronze); }
+
+/* Retain a genuinely dark, readable theme with matching sage highlights. */
+html[data-theme=dark] {
+  --bg: #192624;
+  --paper: #192624;
+  --card: #233430;
+  --ink: #ecf1ed;
+  --text: #d5e1da;
+  --muted: #aabeb3;
+  --rule: #385047;
+  --line: #385047;
+  --green: #a8c9b2;
+  --green-deep: #6b9a80;
+  --green-soft: #2b4237;
+  --accent: #b4d5bc;
+  --surface: #20312d;
+  --bronze: #d2a875;
+}
+html[data-theme=dark] body {
+  background: linear-gradient(135deg,#172721,#26362e 50%,#34342d 100%);
+}
+html[data-theme=dark] .academic-header { background: var(--bg); }
+html[data-theme=dark] .academic-bio {
+  background: radial-gradient(ellipse at 15% 8%,#263d34,transparent 62%),
+              radial-gradient(ellipse at 90% 92%,#393429,transparent 72%),
+              #1a2925;
+}
+html[data-theme=dark] .education-cards article,
+html[data-theme=dark] .profile-socials a { background: var(--card); border-color: var(--rule); }
+html[data-theme=dark] .profile-role { color: var(--accent); }
+html[data-theme=dark] .profile-university,
+html[data-theme=dark] .bio-text,
+html[data-theme=dark] .education-cards p { color: var(--text); }
+html[data-theme=dark] .icon-heading > span { background: #2b4437; }
+html[data-theme=dark] .cv-download { background: linear-gradient(115deg,#436951,#527d61); }
+html[data-theme=dark] .degree-icon { background: #466d56; }
+html[data-theme=dark] .academic-detail .page-hero { background: linear-gradient(120deg,#23362f,#31352d); }
+html[data-theme=dark] .academic-detail .contact-band { background: #294338; }
+html[data-theme=dark] .academic-home .profile-focus { color: #b4d5bc !important; }
+html[data-theme=dark] .academic-home .profile-typing-cursor { color: #d2a875 !important; }
+html[data-theme=dark] .segmented { background: #2c4337; }
+html[data-theme=dark] .segmented button { color: var(--text); }
+html[data-theme=dark] .btn.green,
+html[data-theme=dark] .slide-controls button[data-slide-next] {
+  background: #466d56; border-color: #466d56; color: #fff;
+}
+
+/* Browser motion/accessibility preferences remain respected. */
+@media (prefers-reduced-motion: reduce) {
+  .cv-download, .profile-socials a { transition: none; }
+}
