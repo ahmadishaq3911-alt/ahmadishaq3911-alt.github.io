@@ -80,9 +80,9 @@
 #interface-model .physics-legend span { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 650; color: #45616d; white-space: nowrap; }
 #interface-model .physics-legend i { display: inline-block; height: 10px; width: 10px; border-radius: 50%; box-shadow: inset -2px -2px 3px #0004, 0 0 0 1px #0001; }
 #interface-model .physics-c { background: #c7d5df; }
-#interface-model .physics-w { background: #3989c7; }
-#interface-model .physics-se { background: #d9a454; }
-#interface-model .physics-v { background: #a57ad2; }
+#interface-model .physics-m { background: #3989c7; }
+#interface-model .physics-x { background: #d9a454; }
+#interface-model .physics-mag { background: #a57ad2; }
 #interface-model .physics-note { font-size: 11px; line-height: 1.55; margin: auto 0 0; color: #657b85; }
 #interface-model .physics-note strong { color: #3c5c61; }
 @media (max-width: 1060px) {

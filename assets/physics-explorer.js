@@ -1,5 +1,5 @@
 /*
- * Interactive graphene/V-doped WSe2 visualization, v2.
+ * Interactive graphene/magnetic TMD visualization, v3.
  * Offline, dependency-free Canvas 2D renderer projecting an educational 3D atom model.
  * Schematic atomic arrangement and separation — NOT relaxed DFT geometry.
  */
@@ -17,20 +17,20 @@
   const tags = root.querySelector('[data-view-label]');
   const rotateButton = root.querySelector('[data-action="rotate"]');
   const viewButtons = [...root.querySelectorAll('[data-angle]')];
-  const dopantInput = root.querySelector('[data-show-v]');
+  const magneticInput = root.querySelector('[data-show-magnetic]');
   const glowInput = root.querySelector('[data-show-field]');
   const state = {
     gap: 3.5, yaw: -0.53, pitch: 0.50, zoom: 1,
-    autoRotate: false, showV: true, showField: true, view: '3d',
+    autoRotate: false, showMagnetic: true, showField: true, view: '3d',
     dirty: true
   };
   const widthState = { w: 900, h: 490, dpr: 1 };
   const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const sphereColors = {
     C: ['#ffffff', '#c4d0d9', '#4c6277', '#182c3d'],
-    W: ['#f0fcff', '#3aa9ed', '#1f5e9a', '#112c57'],
-    Se: ['#fff7cf', '#f2bb57', '#bd752e', '#643a25'],
-    V: ['#f8e9ff', '#bd84e6', '#6d3b9b', '#3b1f62']
+    M: ['#f0fcff', '#3aa9ed', '#1f5e9a', '#112c57'],
+    X: ['#fff7cf', '#f2bb57', '#bd752e', '#643a25'],
+    Mag: ['#f8e9ff', '#bd84e6', '#6d3b9b', '#3b1f62']
   };
 
   const model = { atoms: [], bonds: [] };
@@ -63,35 +63,35 @@
     }
   }
 
-  // W atoms form a triangular plane. Selenium planes are above and below it.
-  // V is illustrated substitutionally on a small number of W sites.
-  const ws = [], topSe = [], bottomSe = [];
+  // Generic magnetic TMD: metal atoms with upper and lower chalcogen planes.
+  // A small number of sites are highlighted only to explain magnetic character.
+  const metalSites = [], topX = [], bottomX = [];
   for (let i = -2; i <= 2; i++) {
     for (let j = -2; j <= 1; j++) {
       const a = 1.13;
       const x = (i + j / 2) * a;
       const z = (sqrt3 * j / 2) * a;
-      ws.push(addAtom((i === 0 && j === 0) || (i === -2 && j === 1) ? 'V' : 'W', x, -0.57, z, 0.175));
-      // two triangular Se sublayers: illustration of a Se–W–Se sandwich.
-      topSe.push(addAtom('Se', x + a / 2, 0, z + a / (2 * sqrt3), 0.15));
-      bottomSe.push(addAtom('Se', x + a / 2, -1.10, z + a / (2 * sqrt3), 0.15));
+      metalSites.push(addAtom((i === 0 && j === 0) || (i === -2 && j === 1) ? 'Mag' : 'M', x, -0.57, z, 0.175));
+      // two triangular chalcogen sublayers: illustration of an X–M–X sandwich.
+      topX.push(addAtom('X', x + a / 2, 0, z + a / (2 * sqrt3), 0.15));
+      bottomX.push(addAtom('X', x + a / 2, -1.10, z + a / (2 * sqrt3), 0.15));
     }
   }
-  const substrate = [...ws, ...topSe, ...bottomSe];
+  const substrate = [...metalSites, ...topX, ...bottomX];
   const subX = substrate.reduce((v, a) => v + a.x, 0) / substrate.length;
   const subZ = substrate.reduce((v, a) => v + a.z, 0) / substrate.length;
   substrate.forEach(a => { a.x -= subX; a.z -= subZ; });
   // Draw metal–chalcogen bonds to the closest three selenium positions in each plane.
-  for (const w of ws) {
-    for (const plane of [topSe, bottomSe]) {
+  for (const w of metalSites) {
+    for (const plane of [topX, bottomX]) {
       const nearest = plane.map(se => ({ se, d: Math.hypot(se.x - w.x, se.z - w.z) }))
         .sort((a, b) => a.d - b.d).slice(0, 3);
-      nearest.forEach(n => { if (n.d < 1.32) addBond(w, n.se, 'WSe'); });
+      nearest.forEach(n => { if (n.d < 1.32) addBond(w, n.se, 'MX'); });
     }
   }
 
   const carbonLabel = { text: 'GRAPHENE  ·  C', x: 24, y: 0 };
-  const layerLabel = { text: 'V-DOPED WSe₂  ·  Se–W–Se', x: 24, y: 0 };
+  const layerLabel = { text: 'MAGNETIC TMD  ·  X–M–X', x: 24, y: 0 };
 
   const ease = (v, a, b) => Math.min(b, Math.max(a, v));
   let dragging = false, startX = 0, startY = 0;
@@ -147,7 +147,7 @@
 
   function drawSphere(a, p) {
     const palette = sphereColors[a.type];
-    const r = p.r * (a.type === 'W' || a.type === 'V' ? 1.06 : 1);
+    const r = p.r * (a.type === 'M' || a.type === 'Mag' ? 1.06 : 1);
     const grad = ctx.createRadialGradient(p.x - r*.42, p.y - r*.47, r*.04,p.x,p.y,r*1.2);
     grad.addColorStop(0, palette[0]);grad.addColorStop(.18,palette[1]);grad.addColorStop(.64,palette[2]);grad.addColorStop(1,palette[3]);
     ctx.beginPath();ctx.arc(p.x+1.6,p.y+2,r*1.07,0,2*Math.PI);
@@ -155,7 +155,7 @@
     ctx.beginPath();ctx.arc(p.x,p.y,r,0,2*Math.PI);ctx.fillStyle=grad;ctx.fill();
     ctx.strokeStyle = 'rgba(255,255,255,.28)';ctx.lineWidth=.75;ctx.stroke();
     ctx.beginPath();ctx.arc(p.x-r*.29,p.y-r*.33,r*.20,0,2*Math.PI);ctx.fillStyle='rgba(255,255,255,.30)';ctx.fill();
-    if (a.type === 'V' && state.showV) {
+    if (a.type === 'Mag' && state.showMagnetic) {
       ctx.beginPath();ctx.arc(p.x,p.y,r+3.5,0,2*Math.PI);
       ctx.strokeStyle='rgba(218,160,255,.36)';ctx.lineWidth=1.4;ctx.stroke();
     }
@@ -165,14 +165,14 @@
     if (!state.showField || state.view === 'top') return;
     ctx.save();ctx.globalCompositeOperation = 'screen';
     const top = map3d({type:'C',x:0,z:0,radius:.1});
-    const bottom = map3d({type:'Se',x:0,y:0,z:0,radius:.1});
+    const bottom = map3d({type:'X',x:0,y:0,z:0,radius:.1});
     const cy = (top.y + bottom.y)*.5;
     const grad = ctx.createRadialGradient(w*.50,cy,0,w*.50,cy,w*.30);
     grad.addColorStop(0,'rgba(184,123,255,.33)');grad.addColorStop(.40,'rgba(147,102,240,.11)');grad.addColorStop(1,'rgba(109,93,240,0)');
     ctx.fillStyle=grad;ctx.fillRect(w*.15,cy-w*.30,w*.7,w*.6);
     for(let i=0;i<13;i++) {
       const x=-3.15 + i*.525, z=(i%3-1)*.4;
-      const p1=map3d({type:'C',x,z});const p2=map3d({type:'Se',x,y:0,z});
+      const p1=map3d({type:'C',x,z});const p2=map3d({type:'X',x,y:0,z});
       ctx.strokeStyle=`rgba(197,153,254,${.08 + (i%4)*.032})`;
       ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(p1.x,p1.y);ctx.lineTo(p2.x,p2.y);ctx.stroke();
     }
@@ -212,7 +212,7 @@
       return;
     }
     const p1 = map3d({type:'C',x:3.65,z:-.65});
-    const p2 = map3d({type:'Se',x:3.65,y:0,z:-.65});
+    const p2 = map3d({type:'X',x:3.65,y:0,z:-.65});
     const x = p1.x+20;
     const start = {x, y:p1.y+8},end={x,y:p2.y-7};
     const col='#d5bd86';
@@ -226,7 +226,7 @@
     drawBackground(w,h);
     drawField(w,h);
     const visible = model.atoms.map(a=>{
-      const type = a.type==='V' && !state.showV?'W':a.type;
+      const type = a.type==='Mag' && !state.showMagnetic?'M':a.type;
       return { a, type, p: map3d(a) };
     });
     const lookup = new Map(visible.map(o=>[o.a.id,o]));
@@ -245,7 +245,7 @@
     }
     drawMeasurements();
     drawChip('C · GRAPHENE', 21, h*.20,{bg:'rgba(9,25,44,.80)',font:11,bold:true});
-    drawChip('Se–W–Se · V-DOPED WSe₂', 21, h*.75,{bg:'rgba(9,25,44,.80)',font:11,bold:true});
+    drawChip('X–M–X · MAGNETIC TMD', 21, h*.75,{bg:'rgba(9,25,44,.80)',font:11,bold:true});
     ctx.font='500 10px Inter, Arial, sans-serif';ctx.textBaseline='alphabetic';ctx.fillStyle='rgba(196,214,225,.72)';
     ctx.fillText('SCHEMATIC / NOT DFT-RELAXED',w-196,h-15);
   }
@@ -277,7 +277,7 @@
     state.gap=parseFloat(slider.value);gapValue.textContent=`${state.gap.toFixed(1)} Å`;refresh();
   });
   viewButtons.forEach(b=>b.addEventListener('click',()=>{stopRotation();setView(b.dataset.angle);}));
-  dopantInput.addEventListener('change',()=>{ state.showV=dopantInput.checked;refresh(); });
+  magneticInput.addEventListener('change',()=>{ state.showMagnetic=magneticInput.checked;refresh(); });
   glowInput.addEventListener('change',()=>{ state.showField=glowInput.checked;refresh(); });
   rotateButton.addEventListener('click',()=>{
     state.autoRotate=!state.autoRotate;
@@ -288,7 +288,7 @@
   });
   root.querySelector('[data-action="reset"]').addEventListener('click',()=>{
     stopRotation();state.gap=3.5;state.zoom=1;slider.value='3.5';gapValue.textContent='3.5 Å';
-    state.showV=true;state.showField=true;dopantInput.checked=true;glowInput.checked=true;setView('3d');
+    state.showMagnetic=true;state.showField=true;magneticInput.checked=true;glowInput.checked=true;setView('3d');
   });
   canvas.addEventListener('pointerdown',e=>{stopRotation();dragging=true;pointerId=e.pointerId;startX=e.clientX;startY=e.clientY;canvas.setPointerCapture(e.pointerId);});
   canvas.addEventListener('pointermove',e=>{
