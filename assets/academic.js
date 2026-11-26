@@ -30,7 +30,7 @@
  ['Graduate coursework','coursework.html','University of Maine classes, microelectronics'],
  ['Visual research gallery','gallery.html','Figures, materials, electronics'],
  ['Contact','contact.html','Email, LinkedIn, summer 2027 internship'],
- ['Curriculum vitae','files/Muhammad_Ahmad_Ishaq_Academic_CV.pdf','CV, resume, download']
+ ['Curriculum vitae','files/Muhammad_Ahmad_Ishaq_CV.pdf','CV, resume, download']
  ];
  function search() {
   const term=query.value.trim().toLowerCase(); results.replaceChildren();

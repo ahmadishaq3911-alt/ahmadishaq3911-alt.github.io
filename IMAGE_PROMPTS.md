@@ -4,7 +4,7 @@ Both illustrations were generated with the built-in image-generation tool and co
 
 ## 3D interface illustration
 
-Website asset: `assets/images/quantum-hero.webp`
+Website asset: `assets/images/graphene-wse2-heterostructure.png`
 
 Exact generation prompt:
 

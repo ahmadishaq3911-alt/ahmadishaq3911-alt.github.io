@@ -15,14 +15,14 @@ window.PORTFOLIO_CONTENT = {
       description: 'An introductory discussion of first-principles calculations and electronic-structure modeling.',
       image: 'assets/images/band-illustration.svg',
       imageAlt: 'Conceptual band-structure illustration',
-      link: '', linkText: ''
+      link: 'teaching.html#dft-basics', linkText: 'View presentation'
     },
     {
-      title: 'Omniphobic Paper & Surface Engineering',
+      title: 'PFAS-free Paper for Rural Maine',
       category: 'Research poster', date: '2024',
-      description: 'Earlier experimental work involving droplet behavior and engineered wetting surfaces.',
-      image: '', imageAlt: '',
-      link: '', linkText: ''
+      description: '2024 Rural Issues Symposium poster on PFAS-free paper, with coverage from UMaine.',
+      image: 'assets/images/rural-issues-poster-2024.png', imageAlt: 'PFAS-free paper poster presented at the Rural Issues Symposium',
+      link: 'projects/surface-paper.html#symposium-poster', linkText: 'View poster & coverage'
     }
   ],
 
@@ -36,7 +36,7 @@ window.PORTFOLIO_CONTENT = {
   gallery: [
     { title: 'Arduino radar visualization', caption: 'Ultrasonic scanner project', image: 'assets/images/radar/processing-display.png', link: 'projects/arduino-radar.html' },
     { title: 'Digital logic prototyping', caption: 'Breadboard circuit project', image: 'assets/images/electronics-breadboard.png', link: 'projects/digital-electronics.html' },
-    { title: 'Graphene interface artwork', caption: 'Conceptual research illustration', image: 'assets/images/quantum-hero.webp', link: 'projects/graphene-proximity.html' }
+    { title: 'Graphene interface artwork', caption: 'Conceptual research illustration', image: 'assets/images/graphene-wse2-heterostructure.png', link: 'projects/graphene-proximity.html' }
   ],
 
   /* Certificates are intentionally empty. Add a real documented credential only.

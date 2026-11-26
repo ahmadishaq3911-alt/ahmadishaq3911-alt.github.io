@@ -29,9 +29,12 @@ The public preview files are 312 pixels wide. Larger conceptual illustrations ar
 
 ## Other assets
 
-- `assets/images/quantum-hero.webp` and `assets/images/graphene-plan.webp`: generated with the built-in image tool for this website; exact prompts are in IMAGE_PROMPTS.md.
+- `assets/images/graphene-plan.webp`: generated with the built-in image tool for this website; prompt is in IMAGE_PROMPTS.md.
+- `assets/images/graphene-wse2-heterostructure.png`: exact illustration supplied by the website owner on November 26, 2026; conceptual research motivations, not demonstrated results.
 - `assets/images/profile.webp`: supplied Professional Campus Portrait Photo.png, converted to WebP.
 - `files/*.pdf`: one updated CV, following the supplied reference layout with blue hyperlinks.
 - `assets/explorer.js`: custom educational geometric model, not a computed materials structure.
 - `assets/images/favicon.svg`: custom typographic monogram.
 Only presentation title thumbnails remain; original PPTX files and Microsoft embeds are preserved. Journal PDF access uses publisher links. Confirm figure reuse permissions.
+
+- Rural Issues Symposium poster PDF: original supplied by Muhammad Ahmad Ishaq; preview rendered from that PDF. Authors: Muhammad Ahmad Ishaq, Rohit Kumar, Xiaoxiao Zhao.
