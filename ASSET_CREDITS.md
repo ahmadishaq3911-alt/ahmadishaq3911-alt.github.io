@@ -38,3 +38,6 @@ The public preview files are 312 pixels wide. Larger conceptual illustrations ar
 Only presentation title thumbnails remain; original PPTX files and Microsoft embeds are preserved. Journal PDF access uses publisher links. Confirm figure reuse permissions.
 
 - Rural Issues Symposium poster PDF: original supplied by Muhammad Ahmad Ishaq; preview rendered from that PDF. Authors: Muhammad Ahmad Ishaq, Rohit Kumar, Xiaoxiao Zhao.
+
+- Digital Electronics full-adder illustration: supplied by the owner.
+- DFT Basics PDF: original supplied by the owner; title thumbnail rendered from slide 1. Supersedes the downloadable PPTX and OneDrive embed.

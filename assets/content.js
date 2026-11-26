@@ -13,9 +13,9 @@ window.PORTFOLIO_CONTENT = {
       title: 'Basics of Density Functional Theory',
       category: 'Research group talk', date: 'September 2026',
       description: 'An introductory discussion of first-principles calculations and electronic-structure modeling.',
-      image: 'assets/images/band-illustration.svg',
-      imageAlt: 'Conceptual band-structure illustration',
-      link: 'teaching.html#dft-basics', linkText: 'View presentation'
+      image: 'assets/images/dft-basics-title.png',
+      imageAlt: 'Title slide of DFT in a Nutshell by Muhammad Ahmad Ishaq',
+      link: 'teaching.html#dft-basics', linkText: 'View PDF presentation'
     },
     {
       title: 'PFAS-free Paper for Rural Maine',
@@ -35,7 +35,7 @@ window.PORTFOLIO_CONTENT = {
   // Use only photos or illustrations that you have the right to share.
   gallery: [
     { title: 'Arduino radar visualization', caption: 'Ultrasonic scanner project', image: 'assets/images/radar/processing-display.png', link: 'projects/arduino-radar.html' },
-    { title: 'Digital logic prototyping', caption: 'Breadboard circuit project', image: 'assets/images/electronics-breadboard.png', link: 'projects/digital-electronics.html' },
+    { title: 'Digital logic prototyping', caption: 'Full-adder illustration', image: 'assets/images/digital-electronics-full-adder.png', link: 'projects/digital-electronics.html' },
     { title: 'Graphene interface artwork', caption: 'Conceptual research illustration', image: 'assets/images/graphene-wse2-heterostructure.png', link: 'projects/graphene-proximity.html' }
   ],
 
