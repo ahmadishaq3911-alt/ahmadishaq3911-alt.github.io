@@ -1,0 +1,51 @@
+/* Shared finishing rules for the current sage, navy and bronze design. */
+*,*::before,*::after{box-sizing:border-box}
+img{max-width:100%;height:auto}
+main{min-width:0}
+button,input,a{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--bronze);outline-offset:4px}
+.section-link{text-align:center}
+.academic-detail .page-hero{background:radial-gradient(ellipse at 10% 0,#e4f0e9,transparent 65%),radial-gradient(ellipse at 90% 100%,#f5eee4,transparent 75%),var(--bg)}
+.academic-detail .contact-band{background:var(--green-soft);color:var(--ink)}
+.academic-detail .contact-band h2,.academic-detail .contact-band .eyebrow{color:var(--ink)}
+.academic-detail .button.dark,.academic-detail .button.primary{background:#385d58;color:#fff;border-color:#385d58}
+.academic-detail .lab-section,.academic-detail .findings-section{background:var(--surface);color:var(--text)}
+.academic-detail .lab-section h2,.academic-detail .lab-section h3{color:var(--ink)}
+.academic-detail .page-hero .lead{max-width:800px}
+.academic-detail .project-tile .tile-figure{aspect-ratio:16/10;background:var(--surface)}
+.academic-detail .project-tile .tile-figure img{width:100%;height:100%;object-fit:contain}
+.academic-detail .papers-compact-list{max-width:940px;margin:auto}
+.academic-detail .paper-compact{display:grid;grid-template-columns:64px minmax(0,1fr);gap:24px;padding:28px 0;border-bottom:1px solid var(--rule)}
+.academic-detail .paper-compact h3{font-size:20px;line-height:1.5;margin:0 0 12px}
+.academic-detail .paper-compact p{font-size:15px;line-height:1.7;margin:6px 0}
+.paper-yr{color:var(--accent);font-weight:700}
+.paper-links{display:flex;flex-wrap:wrap;gap:16px;margin-top:16px}
+.paper-links a{font-size:14px;font-weight:650;text-underline-offset:4px}
+.academic-nav{min-width:0}
+.academic-brand{flex-shrink:0}
+.academic-tools{flex-shrink:0}
+.academic-nav a{padding:12px 7px;font-size:12px}
+html[data-theme=dark] .research-focused .research-intro h2,html[data-theme=dark] .papers-focused .papers-intro h2,html[data-theme=dark] .research-narrative strong,html[data-theme=dark] .paper-compact h3 a{color:var(--ink)}
+html[data-theme=dark] .research-narrative,html[data-theme=dark] .research-intro p,html[data-theme=dark] .papers-intro p,html[data-theme=dark] .paper-compact p,html[data-theme=dark] .research-picture figcaption{color:var(--text)}
+html[data-theme=dark] .research-picture{background:var(--card);border-color:var(--rule)}
+html[data-theme=dark] .paper-links a,html[data-theme=dark] .papers-footer a{color:var(--accent)}
+html[data-theme=dark] .academic-detail .page-hero{background:linear-gradient(125deg,#203a30,#22343b)}
+html[data-theme=dark] .academic-detail .info-panel,html[data-theme=dark] .academic-detail .publication{background:var(--card);color:var(--text)}
+html[data-theme=dark] .academic-detail .eyebrow,html[data-theme=dark] .academic-detail .text-link{color:var(--accent)}
+html[data-theme=dark] .academic-detail .site-footer,html[data-theme=dark] .academic-detail .site-footer a{color:var(--text)}
+@media(max-width:1550px){
+ .academic-tools .academic-menu{display:flex}
+ .academic-nav{display:none;position:absolute;top:100%;left:0;right:0;max-height:75vh;overflow-y:auto;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);padding:12px 24px;border-bottom:1px solid var(--rule);box-shadow:0 12px 20px #17283918}
+ .academic-nav.open{display:flex}
+ .academic-nav a{font-size:15px;padding:10px 12px}
+ .academic-header{justify-content:space-between}
+}
+@media(max-width:620px){
+ .academic-detail .wrap{padding-inline:22px}
+ .academic-detail .paper-compact{grid-template-columns:1fr;gap:8px}
+ .academic-detail .section h2{font-size:29px}
+ .academic-detail .section h3{font-size:22px}
+ .academic-detail .button-row{flex-wrap:wrap}
+ .academic-brand{font-size:15px;max-width:190px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

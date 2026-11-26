@@ -15,18 +15,7 @@ The public preview files are 312 pixels wide. Larger conceptual illustrations ar
 | assets/images/papers/ga-fig7.png | GA-alloyed AlSb, Figure 7 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig7_HTML.png?) |
 | assets/images/papers/ga-fig8.png | GA-alloyed AlSb, Figure 8 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig8_HTML.png?) |
 | assets/images/papers/ga-fig9.png | GA-alloyed AlSb, Figure 9 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1140%2Fepjb%2Fs10051-022-00287-z/MediaObjects/10051_2022_287_Fig9_HTML.png?) |
-| assets/images/papers/in-fig1.png | IN-alloyed AlSb, Figure 1 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig1_HTML.png?) |
-| assets/images/papers/in-fig2.png | IN-alloyed AlSb, Figure 2 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig2_HTML.png?) |
-| assets/images/papers/in-fig3.png | IN-alloyed AlSb, Figure 3 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig3_HTML.png?) |
-| assets/images/papers/in-fig4.png | IN-alloyed AlSb, Figure 4 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig4_HTML.png?) |
-| assets/images/papers/in-fig5.png | IN-alloyed AlSb, Figure 5 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig5_HTML.png?) |
-| assets/images/papers/in-fig6.png | IN-alloyed AlSb, Figure 6 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig6_HTML.png?) |
-| assets/images/papers/in-fig7.png | IN-alloyed AlSb, Figure 7 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig7_HTML.png?) |
-| assets/images/papers/in-fig8.png | IN-alloyed AlSb, Figure 8 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig8_HTML.png?) |
-| assets/images/papers/in-fig9.png | IN-alloyed AlSb, Figure 9 | [Publisher image](https://media.springernature.com/m312/springer-static/image/art%3A10.1007%2Fs11082-023-05091-2/MediaObjects/11082_2023_5091_Fig9_HTML.png?) |
 
-- `assets/slides/proposal/` and `assets/slides/radar/`: all 36 and 17 slides rendered directly with PowerPoint from the supplied decks. Content and source attributions are preserved; animations are static in the web viewer.
-- `assets/images/proposal/*`: band plots and interface schematic extracted unchanged from the supplied Final Presentation Proposal Defense 2026.pptx, slide 29 (displayed slide number 19). The preliminary gap and next steps are stated on slide 33 (displayed slide number 23). The interface image is illustrative; literature results in the deck are not attributed to Ishaq. `files/PhD_Proposal_Defense_2026.pptx` is the original supplied deck.
 - Academic layout rebuilt from the user-supplied HugoBlox preview and academic-site reference: gradient biography, circular portrait, education cards, and shared navigation. Personal material belongs to Muhammad Ahmad Ishaq; Ehsan Sharafian’s portrait, research, and certificates are not used. Some base styles from the earlier user-supplied portfolio layout remain underneath the academic theme.
 - `assets/images/electronics-breadboard.png`: original circuit photograph supplied by Muhammad Ahmad Ishaq on November 23, 2026; copied unchanged.
 - `files/Digital_Electronics_Laboratory.docx`: supplied digital coppy.docx, unchanged laboratory document.
@@ -37,7 +26,6 @@ The public preview files are 312 pixels wide. Larger conceptual illustrations ar
 ## Articles
 
 - Nabi et al. (2022), The European Physical Journal B 95, 55. https://doi.org/10.1140/epjb/s10051-022-00287-z
-- Nabi et al. (2023), Optical and Quantum Electronics 55, 799. https://doi.org/10.1007/s11082-023-05091-2
 
 ## Other assets
 
@@ -46,3 +34,4 @@ The public preview files are 312 pixels wide. Larger conceptual illustrations ar
 - `files/*.pdf`: one updated CV, following the supplied reference layout with blue hyperlinks.
 - `assets/explorer.js`: custom educational geometric model, not a computed materials structure.
 - `assets/images/favicon.svg`: custom typographic monogram.
+Only presentation title thumbnails remain; original PPTX files and Microsoft embeds are preserved. Journal PDF access uses publisher links. Confirm figure reuse permissions.

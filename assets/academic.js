@@ -18,10 +18,10 @@
  const dialog = document.querySelector('[data-site-search]'), query = document.querySelector('#site-query'), results = document.querySelector('.search-results');
  const pages = [
  ['Biography & education','index.html#home','Physics PhD, University of Maine, MPhil, BS'],
- ['Graphene interfaces and proximity effects','projects/graphene-proximity.html','DFT QuantumATK OpenMX WSe2 magnetism spin orbit topology'],
+ ['Graphene interfaces and proximity effects','projects/graphene-proximity.html','DFT QuantumATK OpenMX magnetic TMD spin orbit topology'],
  ['Research overview','research.html','First-principles calculations, electronic structure, materials'],
- ['Publications and citations','publications.html','Papers, Ga-doped and In-doped AlSb, supercapacitors'],
- ['Ph.D. proposal presentation','index.html#slides','Talks, slides, quantum anomalous Hall effect'],
+ ['Publications and citations','publications.html','Papers, Ga-doped AlSb, supercapacitors'],
+ ['Ph.D. proposal presentation','projects/graphene-proximity.html#proposal-slides','Talks, slides, quantum anomalous Hall effect'],
  ['Arduino ultrasonic scanner','projects/arduino-radar.html','Radar project, sensor, servo, Processing'],
  ['Digital electronics laboratory','projects/digital-electronics.html','Logic gates, adders, subtractors, flip-flops'],
  ['Recommendations','index.html#recommendations','Liping Yu, Majid Niaz Akhtar, Mostafizur Rahman, Samuel Hess, John Thompson'],
@@ -30,7 +30,7 @@
  ['Graduate coursework','coursework.html','University of Maine classes, microelectronics'],
  ['Visual research gallery','gallery.html','Figures, materials, electronics'],
  ['Contact','contact.html','Email, LinkedIn, summer 2027 internship'],
- ['Curriculum vitae','files/Muhammad_Ahmad_Ishaq_CV.pdf','CV, resume, download']
+ ['Curriculum vitae','files/Muhammad_Ahmad_Ishaq_Academic_CV.pdf','CV, resume, download']
  ];
  function search() {
   const term=query.value.trim().toLowerCase(); results.replaceChildren();

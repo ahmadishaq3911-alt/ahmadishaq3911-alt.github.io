@@ -1,653 +1,596 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+
+<meta charset="utf-8">
+
+
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
+
 <title>Muhammad Ahmad Ishaq · Physics &amp; Materials</title>
-<meta content="Muhammad Ahmad Ishaq, Physics PhD candidate at the University of Maine. Graphene interfaces, first-principles modeling, and low-power electronics." name="description"/>
-<meta content="Muhammad Ahmad Ishaq · Physics &amp; Materials" property="og:title"/>
-<meta content="Physics PhD candidate investigating graphene interfaces for low-power electronics." property="og:description"/>
-<meta content="https://ahmadishaq3911-alt.github.io/" property="og:url"/>
-<link href="https://ahmadishaq3911-alt.github.io/" rel="canonical"/>
-<meta content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://1drv.ms https://onedrive.live.com https://*.officeapps.live.com https://*.office.com; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy"/>
-<meta content="strict-origin-when-cross-origin" name="referrer"/>
-<meta content="#6145e8" name="theme-color"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="assets/final-home.css" rel="stylesheet"/>
-<link href="assets/images/favicon.svg" rel="icon" type="image/svg+xml"/><link href="assets/polish.css" rel="stylesheet"/><script defer="" src="assets/decks.js"></script><script defer="" src="assets/slideshow.js"></script><link href="assets/academic.css" rel="stylesheet"/><script defer="" src="assets/academic.js"></script><style id="profile-focus-style">
-/* Rotating research specialties below University of Maine */
-.academic-home .profile-focus { color:#008f88; font-size:clamp(1.02rem,1.75vw,1.32rem); font-weight:750; line-height:1.45; min-height:2.95em; max-width:100%; margin:12px auto 2px; padding:0 6px; text-align:center; overflow-wrap:normal; }
-.academic-home .profile-typing-cursor { display:inline-block; padding-left:2px; color:#008f88; font-weight:450; animation:focus-cursor-blink .85s steps(1,end) infinite; }
-@keyframes focus-cursor-blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
-@media (prefers-reduced-motion:reduce) { .academic-home .profile-typing-cursor {animation:none;} }
-</style>
-<style id="research-interests-styles">
-/* Research interests: custom Ishaq sage / bronze treatment, not third-party site assets. */
-.academic-home #research-interests { margin-top: 39px; }
-.academic-home #research-interests .interest-heading { display:flex; align-items:center; gap:13px; margin:0 0 19px; color:var(--ink,#172839); font-size:22px; font-weight:750; line-height:1.3; letter-spacing:-.025em; }
-.academic-home #research-interests .interest-heading-icon { display:grid; place-items:center; width:42px; height:42px; flex:0 0 42px; border-radius:50%; background:#e2eee7; color:#355d50; }
-.academic-home #research-interests .interest-heading-icon svg { width:21px; height:21px; }
-.academic-home #research-interests .interest-chips { display:flex; flex-wrap:wrap; gap:10px 9px; align-items:flex-start; }
-.academic-home #research-interests .interest-chip { display:inline-flex; align-items:center; background:#edf6f0; color:#315f50; border:1px solid #c9dfd1; padding:7px 13px; border-radius:999px; font-size:13px; font-weight:600; line-height:1.4; letter-spacing:.005em; transition:transform .18s ease,box-shadow .18s ease; }
-.academic-home #research-interests .interest-chip.accent { background:#f8f1e8; border-color:#e5cfb6; color:#78552f; }
-@media (hover:hover) { .academic-home #research-interests .interest-chip:hover { transform:translateY(-2px); box-shadow:0 4px 12px rgba(33,67,52,.09); } }
-html[data-theme="dark"] .academic-home #research-interests .interest-heading { color:#e6f0eb; }
-html[data-theme="dark"] .academic-home #research-interests .interest-heading-icon { background:#294d3c; color:#bce2c9; }
-html[data-theme="dark"] .academic-home #research-interests .interest-chip { background:#263e36; border-color:#436453; color:#c4e4d3; }
-html[data-theme="dark"] .academic-home #research-interests .interest-chip.accent { background:#483d32; border-color:#7b654c; color:#eed2ad; }
-@media (max-width:620px) { .academic-home #research-interests { margin-top:32px; } .academic-home #research-interests .interest-heading { font-size:21px; } .academic-home #research-interests .interest-chip { padding:7px 11px; font-size:12px; } }
-@media (prefers-reduced-motion:reduce) { .academic-home #research-interests .interest-chip { transition:none; } }
-</style>
-<style>
-/* Scoped, minimalist research and publications presentation. */
-#projects.research-focused, #publications.papers-focused {padding-top:56px;padding-bottom:42px;}
-.research-focused .research-kicker, .papers-focused .papers-kicker {font-size:12px;letter-spacing:.17em;text-transform:uppercase;color:#53756d;font-weight:750;}
-.research-focused .research-intro, .papers-focused .papers-intro {max-width:940px;margin:0 auto 30px; text-align:center;}
-.research-focused .research-intro h2, .papers-focused .papers-intro h2 {font-size:clamp(1.7rem,3vw,2.6rem);margin:9px 0 12px;color:#172839;}
-.research-focused .research-intro p, .papers-focused .papers-intro p {max-width:700px;line-height:1.65;margin:0 auto;color:#526678;}
-.research-focused .research-two-col {display:grid;grid-template-columns:minmax(0,1.1fr) minmax(330px,.9fr);gap:38px;max-width:1060px;margin:0 auto;align-items:center;}
-.research-focused .research-narrative {font-size:1.04rem;line-height:1.85;color:#273948;}
-.research-focused .research-narrative p {margin:0 0 18px;}
-.research-focused .research-narrative strong {color:#244d44;}
-.research-focused .research-picture {margin:0;min-width:0;background:#fff;border:1px solid #e3eae6;border-radius:18px;overflow:hidden;}
-.research-focused .research-picture a, .research-focused .research-picture img {display:block;width:100%;}
-.research-focused .research-picture img {height:auto;max-height:325px;object-fit:contain;padding:8px;box-sizing:border-box;}
-.research-focused .research-picture figcaption {font-size:12px;line-height:1.6;color:#637380;border-top:1px solid #e6ece9;padding:12px 15px;}
-.research-focused .research-link {display:inline-block;margin:4px 0 0;padding:11px 19px;border-radius:9px;background:#385d58;color:#fff;text-decoration:none;font-weight:700;font-size:.92rem;}
-.research-focused .research-link:hover,.research-focused .research-link:focus {background:#274941;color:#fff;}
-.papers-focused .papers-compact-list {max-width:920px;margin:0 auto;border-top:1px solid #dbe5e0;}
-.papers-focused .paper-compact {padding:22px 5px;display:grid;grid-template-columns:60px minmax(0,1fr);gap:20px;border-bottom:1px solid #dbe5e0;}
-.papers-focused .paper-compact .paper-yr {font-size:.84rem;letter-spacing:.03em;color:#477266;font-weight:750;padding-top:4px;}
-.papers-focused .paper-compact h3 {font-size:1.04rem;line-height:1.5;margin:0 0 8px;font-weight:700;}
-.papers-focused .paper-compact h3 a {color:#1a3445;text-decoration:underline;text-decoration-color:#bfccc5;text-underline-offset:3px;}
-.papers-focused .paper-compact h3 a:hover {color:#37685b;}
-.papers-focused .paper-compact p {margin:4px 0 6px;font-size:.89rem;line-height:1.65;color:#596c78;}
-.papers-focused .paper-links {display:flex;gap:17px;flex-wrap:wrap;margin-top:9px;}
-.papers-focused .paper-links a,.papers-focused .paper-links button {font:inherit;font-size:.84rem;color:#2b6457;font-weight:700;text-decoration:none;background:transparent;border:0;padding:0;cursor:pointer;}
-.papers-focused .paper-links a:hover {text-decoration:underline;}
-.papers-focused .papers-footer {max-width:920px;margin:19px auto 0;text-align:right;}
-.papers-focused .papers-footer a {color:#315f50;font-weight:700;}
-@media (max-width:760px) {#projects.research-focused,#publications.papers-focused {padding-top:42px;padding-bottom:30px;} .research-focused .research-two-col {grid-template-columns:1fr;gap:25px;} .papers-focused .paper-compact {grid-template-columns:1fr;gap:5px;}}
-</style><style id="career-layout-self-contained">/* Skills cards and practical experience timeline — designed for Muhammad Ahmad Ishaq. */
-.academic-home .career-skills,.academic-home .career-experience{background:var(--bg,#fff);color:var(--text,#263846);}
-.academic-home .career-skills{padding:78px 24px 66px;max-width:100%;border-bottom:1px solid var(--rule,#e1e9e7);}
-.career-section-heading{text-align:center;max-width:700px;margin:0 auto 34px;}
-.career-section-heading h2{color:var(--ink,#1c2d3a);font-size:clamp(30px,3.2vw,40px);letter-spacing:-.035em;margin:6px 0 10px;font-weight:800;line-height:1.14;}
-.career-section-heading p:not(.career-eyebrow){font-size:15px;line-height:1.7;color:var(--muted,#66767c);margin:0 auto;max-width:580px;}
-.career-section-heading .career-eyebrow,.career-eyebrow{font-weight:800;letter-spacing:.16em;font-size:11px;text-transform:uppercase;color:var(--accent,#355b4b);margin:0 0 7px;}
-.career-skills-inner{max-width:790px;margin:0 auto;display:grid;gap:36px;}
-.career-group h3{font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--accent,#355b4b);text-align:center;text-transform:uppercase;margin:0 0 20px;display:flex;align-items:center;justify-content:center;gap:14px;}
-.career-group h3::before,.career-group h3::after{content:'';height:1px;background:var(--rule,#dce6de);flex:1;max-width:100px;}
-.career-group h3 span{color:var(--bronze,#a97b49);font-weight:700;letter-spacing:.06em;}
-.career-tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;}
-.career-tool{min-height:146px;padding:18px 10px 14px;display:flex;align-items:center;flex-direction:column;justify-content:flex-start;gap:9px;text-align:center;background:var(--surface,#f4f7f3);border:1px solid var(--rule,#dce6de);border-radius:14px;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;box-shadow:0 3px 12px rgba(27,48,48,.025);min-width:0;}
-.career-tool:hover,.career-tool:focus-visible{transform:translateY(-3px);border-color:#9db7a8;box-shadow:0 10px 25px rgba(27,48,48,.10);outline:none;}
-.career-tool-icon{width:46px;height:46px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:12px;font-size:17px;font-weight:850;letter-spacing:-.055em;color:#244738;background:#deece5;border:1px solid rgba(45,91,73,.08);}
-.career-tool-icon.tone-forest{background:#dfebe2;color:#315b4c}.career-tool-icon.tone-gold{background:#fff0cf;color:#805d26}.career-tool-icon.tone-blue{background:#e0ecf6;color:#345b8b}.career-tool-icon.tone-violet{background:#eae6f8;color:#65508c}.career-tool-icon.tone-bronze{background:#f3e6d9;color:#875e37}.career-tool-icon.tone-teal{background:#dff0ef;color:#226b69}
-.career-tool strong{font-size:13px;line-height:1.25;font-weight:750;color:var(--ink,#1c2d3a);}
-.career-tool small{font-size:11px;line-height:1.3;color:var(--muted,#64777c);}
-.academic-home .career-experience{padding:76px 28px 85px;overflow:visible;}
-.career-experience-inner{max-width:860px;margin:0 auto;}
-.career-timeline{max-width:770px;position:relative;display:grid;gap:19px;margin:35px auto 0;padding:0 0 0 41px;}
-.career-timeline::before{content:'';position:absolute;top:13px;bottom:10px;left:14px;width:2px;background:linear-gradient(var(--accent,#355b4b),#b4c8be 70%,var(--rule,#dce6de));}
-.career-role{position:relative;background:var(--card,#fff);border:1px solid var(--rule,#dce6de);box-shadow:0 5px 16px rgba(33,57,55,.035);border-radius:13px;padding:20px 24px 21px;color:var(--text,#344751);min-width:0;}
-.career-timeline-dot{position:absolute;width:19px;height:19px;background:#e8f1ed;border:3px solid var(--accent,#355b4b);border-radius:50%;left:-36px;top:24px;box-shadow:0 0 0 4px var(--bg,#fff);}
-.career-role-top{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:9px;flex-wrap:wrap;}
-.career-role-tag{font-size:10px;letter-spacing:.115em;font-weight:800;text-transform:uppercase;color:var(--accent,#355b4b);}
-.career-role time{font-size:12px;color:var(--muted,#687b80);font-weight:650;white-space:nowrap;}
-.career-role h3{color:var(--ink,#1c2d3a);font-size:19px;line-height:1.32;letter-spacing:-.02em;font-weight:760;margin:0 0 5px;}
-.career-role .career-org{margin:0 0 10px;font-size:13px;color:var(--accent,#355b4b);font-weight:650;}
-.career-role ul{padding-left:18px;margin:0;display:grid;gap:6px;list-style:disc;}
-.career-role li{font-size:13.5px;line-height:1.62;color:var(--text,#354852);}
-.career-role li::marker{color:var(--bronze,#a97b49);}
-.career-disclaimer{max-width:780px;margin:24px auto 0;font-size:12px;line-height:1.65;text-align:center;color:var(--muted,#66787b);}
-.career-disclaimer a{color:var(--accent,#355b4b);font-weight:700;}
-.academic-detail .detail-career-timeline{gap:16px;margin-top:22px;}
-.academic-detail .detail-career-timeline .career-role{padding:18px;}
-.academic-detail .detail-career-timeline .career-role h3{font-size:17px;}
-@media(max-width:700px){.career-tools{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.academic-home .career-skills{padding:52px 19px}.academic-home .career-experience{padding:55px 17px}.career-skills-inner{max-width:520px;gap:27px}.career-tool{min-height:132px;padding:15px 7px}.career-timeline{padding-left:29px;gap:13px}.career-timeline::before{left:7px}.career-timeline-dot{left:-30px;top:22px;width:17px;height:17px}.career-role{padding:16px 15px}.career-role h3{font-size:17px}.career-role li{font-size:13px}.career-section-heading h2{font-size:30px}}
-@media(max-width:400px){.career-tool strong{font-size:12px}.career-tool small{font-size:10.5px}.career-role time{white-space:normal}}
-@media(prefers-reduced-motion:reduce){.career-tool{transition:none}}
-/* Dark theme contrast: inherit live palette and soften non-token badges. */
-html[data-theme=dark] .career-tool-icon{filter:saturate(.78);}
-html[data-theme=dark] .career-timeline-dot{background:#233f35;}
 
 
-/* Stable, self-contained visual layout; no external career stylesheet needed. */
-html {scroll-padding-top:88px}
-body.academic-home #skills.career-skills {
-  box-sizing:border-box!important; display:block!important; position:relative!important;
-  width:100%!important; max-width:none!important; margin:0!important;
-  padding:88px 24px 86px!important; background:#ffffff!important;
-  border:0!important; border-bottom:1px solid #e4ebe9!important;
-  float:none!important; clear:both!important;
-}
-body.academic-home #experience.career-experience {
-  box-sizing:border-box!important; display:block!important; width:100%!important;
-  margin:0!important; padding:78px 24px 96px!important;
-  background:#fbfcfc!important; float:none!important; clear:both!important;
-}
-body.academic-home #skills *,body.academic-home #experience * {box-sizing:border-box}
-body.academic-home #skills .career-section-heading,body.academic-home #experience .career-section-heading {
-  display:block!important; width:100%!important; max-width:680px!important;
-  margin:0 auto 34px!important; padding:0!important;text-align:center!important;
-}
-body.academic-home #skills .career-section-heading h2,
-body.academic-home #experience .career-section-heading h2 {
-  font-size:clamp(29px,3vw,36px)!important;line-height:1.2!important;
-  font-weight:800!important; letter-spacing:-.03em!important;
-  margin:0 0 9px!important;color:#172c3b!important;
-}
-body.academic-home #skills .career-section-heading p:not(.career-eyebrow),
-body.academic-home #experience .career-section-heading p:not(.career-eyebrow){
-  font-size:15px!important;line-height:1.65!important;max-width:600px!important;
-  margin:0 auto!important;color:#667781!important;
-}
-body.academic-home #skills .career-skills-inner {
-  box-sizing:border-box!important;display:flex!important;flex-direction:column!important;
-  gap:37px!important;max-width:780px!important;margin:0 auto!important;
-  width:100%!important;padding:0!important;float:none!important;
-}
-body.academic-home #skills .career-group {width:100%!important;max-width:100%!important;margin:0!important;display:block!important;}
-body.academic-home #skills .career-group h3 {
-  display:flex!important;text-align:center!important;justify-content:center!important;
-  align-items:center!important;margin:0 0 19px!important;font-size:12px!important;
-  letter-spacing:.16em!important;text-transform:uppercase!important;color:#2f7767!important;
-}
-body.academic-home #skills .career-tools {
-  display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;
-  gap:14px!important;width:100%!important;max-width:100%!important;
-  padding:0!important;margin:0!important;
-}
-body.academic-home #skills .career-tool {
-  box-sizing:border-box!important;position:relative!important;display:flex!important;
-  flex-direction:column!important;align-items:center!important;justify-content:center!important;
-  float:none!important;width:auto!important;min-width:0!important;max-width:none!important;
-  min-height:143px!important;margin:0!important;padding:15px 8px!important;
-  gap:8px!important;text-align:center!important;background:#f8fafb!important;
-  border:1px solid #e4eaf0!important;border-radius:14px!important;
-  box-shadow:0 3px 8px rgba(24,50,62,.025)!important;
-}
-body.academic-home #skills .career-tool:hover,
-body.academic-home #skills .career-tool:focus-visible {
-  background:#fff!important;border-color:#bed6c7!important;
-  box-shadow:0 11px 26px rgba(31,66,66,.09)!important;
-  transform:translateY(-3px)!important;
-}
-body.academic-home #skills .career-tool-icon {
-  box-sizing:border-box!important;display:flex!important;align-items:center!important;
-  justify-content:center!important;min-width:48px!important;max-width:64px!important;
-  width:auto!important;padding:0 7px!important;height:48px!important;
-  flex:none!important;border-radius:13px!important;font-size:16px!important;
-  font-weight:800!important;line-height:1!important;
-}
-body.academic-home #skills .career-tool strong {
-  display:block!important;font-size:13px!important;font-weight:750!important;
-  color:#1c3040!important;line-height:1.35!important;margin:0!important;
-}
-body.academic-home #skills .career-tool small {
-  display:block!important;font-size:10.5px!important;line-height:1.3!important;
-  color:#637783!important;margin:0!important;
-}
-body.academic-home #experience .career-experience-inner {
-  max-width:880px!important;width:100%!important;margin:0 auto!important;padding:0!important;
-}
-body.academic-home #experience .career-timeline {
-  position:relative!important;display:grid!important;grid-template-columns:minmax(0,1fr)!important;
-  gap:18px!important;max-width:780px!important;margin:38px auto 0!important;
-  padding:0 0 0 42px!important;float:none!important;
-}
-body.academic-home #experience .career-role {
-  display:block!important;position:relative!important;box-sizing:border-box!important;
-  float:none!important;width:100%!important;min-width:0!important;
-  padding:23px 27px!important;margin:0!important;
-  background:#fff!important;border:1px solid #dce7e5!important;
-  border-radius:14px!important;box-shadow:0 7px 18px rgba(25,48,63,.045)!important;
-}
-body.academic-home #experience .career-role h3 {
-  font-size:19px!important;font-weight:800!important;letter-spacing:-.02em!important;
-  color:#1b3142!important;margin:0 0 7px!important;
-}
-body.academic-home #experience .career-role-top {
-  display:flex!important;justify-content:space-between!important;gap:16px!important;
-  align-items:center!important;margin-bottom:8px!important;
-}
-body.academic-home #experience .career-role ul {
-  display:grid!important;gap:8px!important;list-style:disc!important;
-  padding-left:19px!important;margin:13px 0 0!important;
-}
-body.academic-home #experience .career-role li {
-  font-size:13.5px!important;line-height:1.62!important;
-  margin:0!important;color:#405563!important;
-}
-body.academic-home #experience .career-timeline::before {
-  content:''!important;display:block!important;position:absolute!important;
-  background:linear-gradient(#3a7868,#a9cac0 72%,#dce9e3)!important;
-  width:2px!important;top:14px!important;bottom:14px!important;left:14px!important;
-}
-body.academic-home #experience .career-timeline-dot {
-  display:block!important;position:absolute!important;top:25px!important;left:-36px!important;
-  width:19px!important;height:19px!important;border-radius:50%!important;
-  border:3px solid #367563!important;background:#e9f5ed!important;
-  box-shadow:0 0 0 4px #fbfcfc!important;
-}
-/* Compact timeline on independent experience page. */
-.academic-detail .career-timeline {display:grid!important;grid-template-columns:1fr!important;max-width:780px!important;
- margin:32px auto 0!important;padding:0 0 0 42px!important;gap:17px!important;position:relative!important;}
-.academic-detail .career-timeline::before {content:'';position:absolute;left:14px;top:12px;bottom:12px;width:2px;
- background:linear-gradient(#3a7868,#a8c9be,#e4eeeb);}
-.academic-detail .career-role {display:block!important;position:relative!important;background:#fff!important;
- border:1px solid #dce7e5!important;border-radius:13px!important;margin:0!important;padding:20px 24px!important;
- box-shadow:0 6px 18px rgba(25,48,63,.045)!important;box-sizing:border-box!important;}
-.academic-detail .career-timeline-dot {position:absolute!important;left:-36px!important;top:23px!important;
- width:19px!important;height:19px!important;border-radius:50%!important;border:3px solid #367563!important;
- background:#e9f5ed!important;box-shadow:0 0 0 4px white!important;}
-@media(max-width:780px){
- body.academic-home #skills.career-skills {padding:61px 17px 62px!important}
- body.academic-home #experience.career-experience{padding:58px 17px 72px!important}
- body.academic-home #skills .career-tools{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
- body.academic-home #skills .career-tool{min-height:130px!important;padding:13px 8px!important}
- body.academic-home #experience .career-timeline{padding-left:31px!important}
- body.academic-home #experience .career-timeline::before{left:8px!important}
- body.academic-home #experience .career-timeline-dot{left:-30px!important}
- body.academic-home #experience .career-role{padding:18px 16px!important}
- .academic-detail .career-timeline{padding-left:30px!important}
- .academic-detail .career-timeline::before{left:8px!important}
- .academic-detail .career-timeline-dot{left:-30px!important}
-}
-/* Site dark-mode support where provided. */
-html[data-theme="dark"] body.academic-home #skills.career-skills,
-html[data-theme="dark"] body.academic-home #experience.career-experience {background:#101a20!important;color:#edf1f2!important;}
-html[data-theme="dark"] body.academic-home #skills .career-tool,
-html[data-theme="dark"] body.academic-home #experience .career-role,
-html[data-theme="dark"] .academic-detail .career-role {background:#1a2a32!important;border-color:#34515b!important;}
-html[data-theme="dark"] body.academic-home #skills .career-section-heading h2,
-html[data-theme="dark"] body.academic-home #experience .career-section-heading h2,
-html[data-theme="dark"] body.academic-home #skills .career-tool strong,
-html[data-theme="dark"] body.academic-home #experience .career-role h3 {color:#f0f5f7!important;}
-html[data-theme="dark"] body.academic-home #skills .career-tool small,
-html[data-theme="dark"] body.academic-home #experience .career-role li,
-html[data-theme="dark"] body.academic-home #skills .career-section-heading p:not(.career-eyebrow),
-html[data-theme="dark"] body.academic-home #experience .career-section-heading p:not(.career-eyebrow){color:#b4c6cc!important;}
-</style><style id="lab-projects-card-styles">
-/* Original portfolio project cards: reference-inspired arrangement, own brand palette. */
-.academic-home .lab-projects-showcase {
-  width:100%; box-sizing:border-box; padding:76px 24px 94px;
-  border-top:1px solid #e9efeb; background:#fff;
-  color:#172839;
-}
-.academic-home .lab-projects-showcase * {box-sizing:border-box;}
-.academic-home .lab-projects-container {max-width:960px; margin:0 auto;}
-.academic-home .lab-projects-heading {text-align:center; max-width:650px; margin:0 auto 36px;}
-.academic-home .lab-projects-eyebrow {color:#6d8a7e; text-transform:uppercase; font-weight:800; letter-spacing:.17em; font-size:.69rem; margin:0 0 9px;}
-.academic-home .lab-projects-heading h2 {font-family:inherit; font-size:clamp(1.8rem,2.9vw,2.25rem); font-weight:800; color:#182b3b; letter-spacing:-.035em; line-height:1.18; margin:0 0 11px;}
-.academic-home .lab-projects-heading>p:last-child {font-size:.99rem; line-height:1.7; color:#5d7080; margin:0;}
-.academic-home .lab-projects-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch;}
-.academic-home a.lab-project-card {
-  display:flex;flex-direction:column;min-width:0; height:100%; background:#fff;
-  border:1px solid #dfebe7; border-radius:15px; overflow:hidden;
-  text-decoration:none; color:inherit;
-  box-shadow:0 4px 17px rgba(18,42,41,.042);
-  transition: transform .22s ease,box-shadow .22s ease,border-color .22s ease;
-}
-.academic-home a.lab-project-card:hover,.academic-home a.lab-project-card:focus-visible {
-  transform:translateY(-5px);box-shadow:0 14px 30px rgba(24,56,52,.11);border-color:#89b2a4;
-}
-.academic-home a.lab-project-card:focus-visible {outline:3px solid #b58558;outline-offset:3px;}
-.academic-home .lab-project-photo {width:100%;background:#f1f5f4;aspect-ratio:16/10;overflow:hidden;}
-.academic-home .lab-project-photo img {display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .32s ease;}
-.academic-home .lab-project-card:hover .lab-project-photo img {transform:scale(1.035);}
-.academic-home .lab-project-content {padding:21px 24px 20px;flex:1;display:flex;flex-direction:column;}
-.academic-home .lab-project-category {display:table;align-self:flex-start;font-size:.69rem;font-weight:750;color:#315f50;background:#e8f4ed;border:1px solid #d1e7d9;letter-spacing:.015em;border-radius:999px;padding:5px 10px;line-height:1.3;}
-.academic-home .lab-project-content h3 {font-family:inherit;font-size:1.24rem;font-weight:800;color:#172839;line-height:1.3;letter-spacing:-.02em;margin:13px 0 9px;}
-.academic-home .lab-project-content p {font-size:.92rem;line-height:1.73;color:#536777;margin:0 0 25px;}
-.academic-home .lab-project-bottom {display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:auto;padding-top:13px;border-top:1px solid #e6ede8;font-size:.73rem;font-weight:550;line-height:1.45;color:#71818b;}
-.academic-home .lab-project-arrow {font-size:1.1rem;color:#35665b;transition:transform .2s ease;}
-.academic-home .lab-project-card:hover .lab-project-arrow {transform:translate(2px,-2px);}
-@media(max-width:720px) {
-  .academic-home .lab-projects-showcase {padding:60px 20px 72px;}
-  .academic-home .lab-projects-grid {grid-template-columns:minmax(0,1fr);gap:20px;max-width:480px;margin:auto;}
-  .academic-home .lab-projects-heading {margin-bottom:28px;}
-  .academic-home .lab-project-content {padding:19px 21px;}
-}
-@media(prefers-reduced-motion:reduce){
-  .academic-home .lab-project-card, .academic-home .lab-project-photo img, .academic-home .lab-project-arrow{transition:none!important;}
-}
-html[data-theme="dark"] .academic-home .lab-projects-showcase {background:#111e25;color:#e4eee9;border-color:#2d4843;}
-html[data-theme="dark"] .academic-home .lab-projects-heading h2,html[data-theme="dark"] .academic-home .lab-project-content h3 {color:#e4eee9;}
-html[data-theme="dark"] .academic-home .lab-projects-heading>p:last-child,html[data-theme="dark"] .academic-home .lab-project-content p{color:#afc0be;}
-html[data-theme="dark"] .academic-home a.lab-project-card {background:#1c3034;border-color:#354f4d;}
-html[data-theme="dark"] .academic-home .lab-project-photo {background:#1d2b2f;}
-html[data-theme="dark"] .academic-home .lab-project-category{background:#29483d;color:#c6e7d4;border-color:#456b58;}
-html[data-theme="dark"] .academic-home .lab-project-bottom {color:#b5c6c1;border-color:#38524b;}
-</style><style id="portfolio-showcase-style">
-/* --- SHOWCASE: talks, hobbies, gallery and training --- */
-.portfolio-showcase { --sc-accent:#3a7067; --sc-ink:#152d3a; --sc-muted:#617381; --sc-border:#dfe8e7; --sc-bg:#ffffff; color:var(--sc-ink); font-family:Inter,system-ui,-apple-system,sans-serif; padding: 77px 24px 20px; max-width:1120px; margin:0 auto; scroll-margin-top:92px; }
-.portfolio-showcase .showcase-heading {text-align:center; margin: 0 auto 27px; max-width:700px;}
-.portfolio-showcase .showcase-kicker {font-size:.72rem; letter-spacing:.15em; text-transform:uppercase; font-weight:800; color:var(--sc-accent); margin:0 0 9px;}
-.portfolio-showcase .showcase-heading h2 {font-size:clamp(1.7rem,3vw,2.35rem);line-height:1.12;margin:0;color:var(--sc-ink);letter-spacing:-.04em;}
-.portfolio-showcase .showcase-heading>p:last-child {font-size:.92rem; line-height:1.7; color:var(--sc-muted);margin:11px auto 0;}
-.portfolio-showcase .showcase-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch;}
-.portfolio-showcase .showcase-card {background:var(--sc-bg);border:1px solid var(--sc-border);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;min-width:0;box-shadow:0 7px 18px rgba(16,45,53,.045);transition:transform .2s ease,box-shadow .2s ease;}
-.portfolio-showcase .showcase-card:hover {transform:translateY(-3px);box-shadow:0 16px 30px rgba(16,45,53,.10);}
-.portfolio-showcase .showcase-card-image {display:block;position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,#e8f4ef,#eef0fc);overflow:hidden;}
-.portfolio-showcase .showcase-card-image img {display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease;}
-.portfolio-showcase .showcase-card:hover .showcase-card-image img {transform:scale(1.035);}
-.portfolio-showcase .showcase-art-fallback {width:100%;height:100%;display:grid;place-items:center;background:linear-gradient(125deg,#e1efea,#eef2f8 80%);font-size:3.3rem;color:#496e64;}
-.portfolio-showcase .showcase-content {padding:18px 19px 20px;display:flex;flex-direction:column;flex:1;}
-.portfolio-showcase .showcase-category {display:inline-flex;align-self:flex-start;align-items:center;border-radius:999px;padding:5px 9px;background:#edf7f2;color:#256459;font-size:.68rem;font-weight:800;letter-spacing:.025em;}
-.portfolio-showcase .showcase-content h3 {font-size:1.03rem;letter-spacing:-.025em;line-height:1.35;margin:11px 0 8px;color:var(--sc-ink);}
-.portfolio-showcase .showcase-content p {font-size:.82rem;line-height:1.65;color:var(--sc-muted);margin:0 0 16px;}
-.portfolio-showcase .showcase-content .showcase-footer {border-top:1px solid var(--sc-border);padding-top:12px;display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;font-size:.72rem;color:var(--sc-muted);}
-.portfolio-showcase .showcase-content .showcase-footer a {color:#285f55;text-decoration:none;font-weight:800;white-space:nowrap;}
-.portfolio-showcase .showcase-content .showcase-footer a:hover {text-decoration:underline;}
-.portfolio-showcase .showcase-carousel-shell {position:relative;max-width:1050px;margin:auto;}
-.portfolio-showcase .showcase-carousel {display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 36px)/3);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#a1c9bf transparent;padding:3px 2px 14px;}
-.portfolio-showcase .showcase-carousel .showcase-card {scroll-snap-align:start;}
-.portfolio-showcase .showcase-carousel-actions {display:flex;align-items:center;justify-content:center;gap:16px;margin-top:8px;}
-.portfolio-showcase .showcase-arrow {height:36px;width:36px;border-radius:50%;border:1px solid #cce0d9;background:#fff;color:#2e6c61;font-size:1.2rem;cursor:pointer;}
-.portfolio-showcase .showcase-arrow:disabled {opacity:.3;cursor:not-allowed;}
-.portfolio-showcase .showcase-scroll-track {width:min(160px,36%);height:5px;background:#e3ebe8;border-radius:99px;overflow:hidden;}
-.portfolio-showcase .showcase-scroll-track span {display:block;width:33.33%;height:100%;border-radius:99px;background:#65aaa1;transform:translateX(0);transition:transform .2s ease;}
-.portfolio-showcase .showcase-hobby-art {aspect-ratio:16/10;background:linear-gradient(135deg,#e7f2ec,#e8ecf5);display:flex;align-items:center;justify-content:center;gap:8px;}
-.portfolio-showcase .showcase-hobby-art .showcase-emoji {font-size:3.1rem;filter:drop-shadow(0 8px 10px rgba(20,50,50,.08));}
-.portfolio-showcase .showcase-gallery-grid {display:grid;grid-template-columns:1fr 1.05fr 1fr;gap:12px;align-items:stretch;}
-.portfolio-showcase .showcase-gallery-item {border-radius:13px;position:relative;overflow:hidden;background:#e8eeec;aspect-ratio:4/4.6;min-width:0;display:block;border:1px solid #e4ece9;}
-.portfolio-showcase .showcase-gallery-item:nth-child(2) {aspect-ratio:4/4.6;}
-.portfolio-showcase .showcase-gallery-item img {width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s ease;}
-.portfolio-showcase .showcase-gallery-item:hover img {transform:scale(1.035);}
-.portfolio-showcase .showcase-gallery-caption {position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(9,27,34,.83));padding:35px 14px 13px;color:#fff;font-size:.83rem;font-weight:700;line-height:1.4;}
-.portfolio-showcase .showcase-gallery-caption small {display:block;font-size:.67rem;font-weight:400;opacity:.87;margin-top:3px;}
-.portfolio-showcase .showcase-empty {text-align:center;border:1px dashed #c9d9d4;border-radius:15px;background:#f8fbfa;padding:26px 20px;max-width:760px;margin:auto;}
-.portfolio-showcase .showcase-empty strong {display:block;font-size:.98rem;color:#254b45;margin:0 0 7px;}
-.portfolio-showcase .showcase-empty p {font-size:.85rem;color:#667682;line-height:1.65;margin:0;}
-.portfolio-showcase .showcase-note {text-align:center;color:#73818a;font-size:.72rem;margin:13px 0 0;}
-.portfolio-showcase .showcase-certificate-content {padding-top:21px;}
-/* Bright cards remain legible when the website theme is switched. */
-body.dark .portfolio-showcase, .dark-mode .portfolio-showcase, [data-theme='dark'] .portfolio-showcase {--sc-ink:#eaf2ef;--sc-muted:#a8b9b9;--sc-border:#38514d;--sc-bg:#142723;}
-body.dark .portfolio-showcase .showcase-empty, .dark-mode .portfolio-showcase .showcase-empty, [data-theme='dark'] .portfolio-showcase .showcase-empty {background:#17312c;}
-body.dark .portfolio-showcase .showcase-empty strong, .dark-mode .portfolio-showcase .showcase-empty strong, [data-theme='dark'] .portfolio-showcase .showcase-empty strong {color:#d9efea;}
-@media(max-width:900px){.portfolio-showcase{padding:57px 20px 10px}.portfolio-showcase .showcase-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-showcase .showcase-carousel{grid-auto-columns:calc((100% - 18px)/2)}.portfolio-showcase .showcase-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-showcase .showcase-gallery-item:nth-child(3){grid-column:1/-1;aspect-ratio:2.4/1}}
-@media(max-width:580px){.portfolio-showcase{padding:48px 16px 7px}.portfolio-showcase .showcase-grid{grid-template-columns:minmax(0,1fr)}.portfolio-showcase .showcase-carousel{grid-auto-columns:minmax(255px,85%)}.portfolio-showcase .showcase-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.portfolio-showcase .showcase-gallery-item,.portfolio-showcase .showcase-gallery-item:nth-child(2){aspect-ratio:4/5}.portfolio-showcase .showcase-gallery-item:nth-child(3){aspect-ratio:2.1/1}.portfolio-showcase .showcase-content{padding:15px}}
-@media(prefers-reduced-motion:reduce){.portfolio-showcase .showcase-card,.portfolio-showcase .showcase-card-image img,.portfolio-showcase .showcase-gallery-item img{transition:none!important}}
-</style><script defer="True" src="assets/portfolio-showcase.js"></script><style id="ishaq-final-sections-styles">
+<meta content="Muhammad Ahmad Ishaq, Physics PhD candidate at the University of Maine. Graphene interfaces, first-principles modeling, and low-power electronics." name="description">
 
-/* Cohesive final homepage sections; scoped to prevent changing the project and research pages. */
-.academic-home .finish-section,.academic-home .finish-contact{font-family:Inter,system-ui,-apple-system,sans-serif;box-sizing:border-box;color:#192d38;scroll-margin-top:92px}
-.academic-home .finish-section *,.academic-home .finish-contact *{box-sizing:border-box}
-.academic-home .finish-section{max-width:none!important;width:100%!important;padding:76px 24px 20px!important;margin:0!important;background:#fff!important;}
-.academic-home .finish-container{max-width:1020px;margin:0 auto}
-.academic-home .finish-heading{text-align:center;max-width:690px;margin:0 auto 32px}
-.academic-home .finish-kicker{font-size:11px!important;color:#4c7b6b!important;letter-spacing:.14em;font-weight:750!important;text-transform:uppercase;margin:0 0 12px!important}
-.academic-home .finish-heading h2{font-size:clamp(27px,3.1vw,36px)!important;line-height:1.2!important;letter-spacing:-.035em!important;font-weight:800!important;color:#162a39!important;text-align:center!important;margin:0 0 12px!important}
-.academic-home .finish-heading>p:last-child{font-size:14px!important;line-height:1.65!important;color:#657683!important;margin:0 auto!important;max-width:600px}
-.academic-home .finish-rec-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;margin:0 auto;width:100%;max-width:1020px}
-.academic-home .finish-rec-card{background:#fff;border:1px solid #dfe9e4;border-radius:15px;padding:25px 25px 21px;box-shadow:0 8px 25px rgba(20,42,57,.045);display:flex;flex-direction:column;min-width:0;transition:transform .2s ease,box-shadow .2s ease}
-.academic-home .finish-rec-card:hover{transform:translateY(-3px);box-shadow:0 13px 27px rgba(20,42,57,.085)}
-.academic-home .finish-rec-top{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:15px}
-.academic-home .finish-rec-label{font-size:10px;font-weight:800;color:#2f6b5d;letter-spacing:.05em;text-transform:uppercase;background:#eaf4ef;padding:6px 9px;border-radius:100px}
-.academic-home .finish-rec-date{font-size:11px;color:#778994;white-space:nowrap}
-.academic-home .finish-rec-card h3{font-size:18px!important;color:#1a3040;line-height:1.34!important;letter-spacing:-.022em!important;margin:0 0 10px!important}
-.academic-home .finish-rec-card>p{font-size:13px!important;line-height:1.72!important;color:#536776!important;margin:0 0 20px!important;max-width:none!important}
-.academic-home .finish-rec-author{display:flex;gap:11px;align-items:center;border-top:1px solid #e7edeb;padding-top:15px;margin-top:auto;color:#1b3342}
-.academic-home .finish-author-icon{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:50%;background:#edf4f0;border:1px solid #d9e9df;color:#39695b;font-size:10px;font-weight:800}
-.academic-home .finish-rec-author strong{display:block;font-size:12px!important;line-height:1.4!important;color:#203946!important}
-.academic-home .finish-rec-author small{display:block;font-size:11px;line-height:1.55;color:#72818b;margin-top:3px}
-.academic-home .finish-clarification{max-width:850px;margin:15px auto 0!important;font-size:11px!important;color:#84919a!important;text-align:center!important;line-height:1.55!important}
-.academic-home .finish-about{padding-top:94px!important;padding-bottom:82px!important;background:#fbfcfb!important}
-.academic-home .finish-about-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.academic-home .finish-about-card{background:white;padding:28px;border-radius:16px;border:1px solid #e2e9e4;box-shadow:0 7px 22px rgba(18,47,40,.035)}
-.academic-home .finish-about-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;font-size:23px;background:#e9f3ee;color:#376559;margin-bottom:17px}
-.academic-home .finish-about-card h3{font-size:19px!important;color:#192f3e!important;margin:0 0 10px!important}
-.academic-home .finish-about-card p{color:#566b78!important;font-size:13px!important;line-height:1.78!important;margin:0 0 19px!important}
-.academic-home .finish-about-card .finish-text-link{font-size:13px;color:#306657;text-decoration:none;border-bottom:1px solid #8db4a7;padding-bottom:3px;font-weight:750}
-.academic-home .finish-about-card .finish-text-link:hover{color:#9b673f}
-.academic-home section.finish-contact{width:100%!important;max-width:none!important;background:linear-gradient(135deg,#ecf4ef 0%,#f7f8f7 53%,#f3f0eb 100%)!important;margin:0!important;padding:74px 24px 0!important;min-height:auto!important;text-align:center!important;border-top:1px solid #e2e9e4!important}
-.academic-home .finish-contact-main{width:100%;max-width:720px;margin:0 auto;padding-bottom:64px}
-.academic-home .finish-contact-avatar{display:block;width:78px!important;height:78px!important;object-fit:cover;border:3px solid #fff;border-radius:50%;margin:0 auto 19px!important;box-shadow:0 8px 28px rgba(13,47,46,.13)}
-.academic-home .finish-contact h2{font-size:clamp(32px,3.5vw,44px)!important;letter-spacing:-.045em!important;line-height:1.12!important;color:#172d3a!important;margin:0 0 14px!important}
-.academic-home .finish-contact-intro{max-width:560px;margin:0 auto 24px!important;color:#5d717b!important;font-size:14px!important;line-height:1.65!important}
-.academic-home .finish-contact-actions{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap}
-.academic-home .finish-primary-btn,.academic-home .finish-outline-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 18px;border-radius:9px;font-size:13px;font-weight:750;line-height:1.2;text-decoration:none;transition:transform .2s,background .2s}
-.academic-home .finish-primary-btn{background:#356358;color:white!important;border:1px solid #356358}
-.academic-home .finish-primary-btn:hover{background:#254d45;transform:translateY(-2px)}
-.academic-home .finish-outline-btn{background:#fff;color:#315c51!important;border:1px solid #d2e2dc}
-.academic-home .finish-outline-btn:hover{background:#ebf3ef;transform:translateY(-2px)}
-.academic-home .finish-email{font-size:12px!important;color:#657a83!important;margin:18px auto 0!important}
-.academic-home .finish-footer{display:flex!important;max-width:1060px;width:100%;margin:0 auto!important;padding:21px 0 26px!important;align-items:center;justify-content:space-between;gap:17px;flex-wrap:wrap;border-top:1px solid #d8e3de;color:#6c7e85;text-align:left}
-.academic-home .finish-footer span{font-size:11px}
-.academic-home .finish-footer nav{display:flex;gap:18px;flex-wrap:wrap}
-.academic-home .finish-footer a{font-size:11px!important;color:#536e6b!important;text-decoration:none}
-.academic-home .finish-footer a:hover{text-decoration:underline}
-@media(max-width:740px){.academic-home .finish-section{padding:58px 18px 10px!important}.academic-home .finish-about{padding-top:72px!important;padding-bottom:60px!important}.academic-home .finish-rec-grid,.academic-home .finish-about-grid{grid-template-columns:1fr!important;gap:13px!important}.academic-home .finish-rec-card{padding:20px}.academic-home .finish-about-card{padding:22px}.academic-home section.finish-contact{padding:65px 20px 0!important}.academic-home .finish-contact-actions{gap:8px}.academic-home .finish-footer{justify-content:center;text-align:center!important}.academic-home .finish-footer nav{justify-content:center;gap:12px}}
-@media(prefers-reduced-motion:reduce){.academic-home .finish-rec-card,.academic-home .finish-primary-btn,.academic-home .finish-outline-btn{transition:none!important}.academic-home .finish-rec-card:hover,.academic-home .finish-primary-btn:hover,.academic-home .finish-outline-btn:hover{transform:none!important}}
 
-</style>
-</head>
-<body class="academic-home"><a class="skip" href="#content">Skip to content</a><div class="academic-shell"><header class="academic-header"><a class="academic-brand" href="#home">Muhammad Ahmad Ishaq</a><nav aria-label="Main navigation" class="academic-nav" id="academic-nav"><a href="#home">Bio</a><a href="#projects">Research</a><a href="#publications">Papers</a><a href="#talks">Talks</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#hands-on">Projects</a><a href="#hobbies">Hobbies</a><a href="#gallery-highlights">Gallery</a><a href="#certificates">Certificates</a><a href="teaching.html">Teaching</a><a href="#recommendations">Recommendations</a></nav><div class="academic-tools"><button aria-label="Search website" data-search-open="" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg></button><button aria-label="Switch to dark theme" aria-pressed="false" data-theme-toggle="" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M20.5 14a8.5 8.5 0 0 1-10.5-10.5A8.5 8.5 0 1 0 20.5 14Z"></path></svg></button><button aria-controls="academic-nav" aria-expanded="false" aria-label="Open navigation" class="academic-menu" data-menu-toggle="" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></header><main id="content"><section class="academic-bio" id="home"><div class="profile-column"><div class="portrait-ring"><img alt="Muhammad Ahmad Ishaq" height="200" src="assets/images/profile.webp" width="200"/><span aria-hidden="true" class="portrait-mark">⚛</span></div><h1>Muhammad<br/>Ahmad Ishaq</h1><p class="profile-role">Physics Ph.D. Candidate</p><p class="profile-university">University of Maine</p><p aria-label="Research focus: 2D quantum materials, first-principles DFT, low-power electronics, graphene and magnetic 2D interfaces, spin-orbit coupling, magnetic proximity, and high-performance computing" class="profile-focus"><span id="profile-focus-text">2D Quantum Materials</span><span aria-hidden="true" class="profile-typing-cursor">|</span></p><p class="profile-location">Orono, Maine, USA</p><div class="profile-socials"><a aria-label="Email" href="mailto:muhammad.ishaq@maine.edu"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 6 9 7 9-7"></path></svg></a><a aria-label="GitHub" href="https://github.com/ahmadishaq3911-alt"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M9 20c-5 1-5-3-7-3m14 6v-4a3.5 3.5 0 0 0-1-3c4-.5 6-2 6-6a5 5 0 0 0-1.5-3.5A5 5 0 0 0 19 3s-2 0-4 1a13 13 0 0 0-6 0C7 3 5 3 5 3a5 5 0 0 0-.5 3.5A5 5 0 0 0 3 10c0 4 2 5.5 6 6a3.5 3.5 0 0 0-1 3v4"></path></svg></a><a aria-label="LinkedIn" href="https://www.linkedin.com/in/muhammad-ahmad-ishaq-8b7ab3203/"><b>in</b></a><a aria-label="Google Scholar" href="https://scholar.google.com/citations?user=1CxezRQAAAAJ"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></a></div><a class="profile-contact" href="#contact">Let’s connect</a></div><div class="bio-column"><h2 class="icon-heading"><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><circle cx="8" cy="10" r="2"></circle><path d="M5 16q3-4 6 0M14 8h4m-4 4h4m-4 4h4"></path></svg></span>Professional Summary</h2><p class="bio-text">I am a Physics Ph.D. candidate at the University of Maine, working with Dr. Dinh Loc Duong. My research explores how neighboring materials can change graphene’s electronic properties, with the goal of enabling lower-power electronics. I use first-principles calculations to study spin–orbit coupling, magnetism, and proximity effects in two-dimensional materials. My background spans semiconductor alloys, energy-storage materials, and university teaching. Outside the lab, I enjoy badminton, swimming, and table tennis.</p><a class="cv-download" download="" href="files/Muhammad_Ahmad_Ishaq_CV.pdf"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v6h5M12 12v6m-3-3 3 3 3-3"></path></svg>Download CV</a><h2 class="icon-heading education-heading"><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></span>Education</h2><div class="education-cards"><article><span class="degree-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></span><div><h3>Ph.D. in Physics</h3><p>University of Maine</p><small>Expected December 2027</small></div></article><article><span class="degree-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></span><div><h3>M.Phil. in Applied Physics</h3><p>University of Engineering and Technology, Lahore</p><small>2017–2019</small></div></article><article><span class="degree-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></span><div><h3>BS (Hons.) in Physics</h3><p>University of Education, Lahore</p><small>2013–2017</small></div></article></div>
+<meta content="Muhammad Ahmad Ishaq · Physics &amp; Materials" property="og:title">
+
+
+<meta content="Physics PhD candidate investigating graphene interfaces for low-power electronics." property="og:description">
+
+
+<meta content="https://ahmadishaq3911-alt.github.io/" property="og:url">
+
+
+<link href="https://ahmadishaq3911-alt.github.io/" rel="canonical">
+
+
+<meta content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://1drv.ms https://onedrive.live.com https://*.officeapps.live.com https://*.office.com; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy">
+
+
+<meta content="strict-origin-when-cross-origin" name="referrer">
+
+
+<meta content="#385d58" name="theme-color">
+
+
+<link href="https://fonts.googleapis.com" rel="preconnect">
+
+
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+
+<link href="assets/final-home.css" rel="stylesheet">
+
+
+<link href="assets/images/favicon.svg" rel="icon" type="image/svg+xml"><link href="assets/polish.css" rel="stylesheet"><link href="assets/academic.css" rel="stylesheet"><script defer src="assets/academic.js"></script>
+
+
+
+
+
+<script defer src="assets/content.js"></script><script defer src="assets/portfolio-showcase.js"></script>
+
+
+<link rel="stylesheet" href="assets/home-sections.css"><meta property="og:image" content="https://ahmadishaq3911-alt.github.io/assets/images/profile.webp"><link rel="stylesheet" href="assets/audit.css"><link rel="stylesheet" href="assets/career.css"></head>
+
+
+<body class="academic-home"><a class="skip" href="#content">Skip to content</a><div class="academic-shell"><header class="academic-header"><a class="academic-brand" href="#home">Muhammad Ahmad Ishaq</a><nav class="academic-nav" id="academic-nav" aria-label="Main navigation"><a href="#home">Bio</a><a href="#projects">Research</a><a href="#publications">Papers</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#hands-on">Projects</a><a href="#talks">Talks</a><a href="#hobbies">Hobbies</a><a href="#gallery-highlights">Gallery</a><a href="#certificates">Certificates</a><a href="#teaching">Teaching</a><a href="#recommendations">Recommendations</a><a href="#contact">Contact</a></nav><div class="academic-tools"><button aria-label="Search website" data-search-open="" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg></button><button aria-label="Switch to dark theme" aria-pressed="false" data-theme-toggle="" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="M20.5 14a8.5 8.5 0 0 1-10.5-10.5A8.5 8.5 0 1 0 20.5 14Z"></path></svg></button><button aria-controls="academic-nav" aria-expanded="false" aria-label="Open navigation" class="academic-menu" data-menu-toggle="" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></header><main id="content"><section class="academic-bio" id="home"><div class="profile-column"><div class="portrait-ring"><img alt="Muhammad Ahmad Ishaq" height="1087" src="assets/images/profile.webp" width="1087" decoding="async"><span aria-hidden="true" class="portrait-mark">⚛</span></div><h1>Muhammad<br>Ahmad Ishaq</h1><p class="profile-role">Physics Ph.D. Candidate</p><p class="profile-university">University of Maine</p><p aria-label="Research focus: 2D quantum materials, first-principles DFT, low-power electronics, graphene and magnetic 2D interfaces, spin-orbit coupling, magnetic proximity, and high-performance computing" class="profile-focus"><span id="profile-focus-text">2D Quantum Materials</span><span aria-hidden="true" class="profile-typing-cursor">|</span></p><p class="profile-location">Orono, Maine, USA</p><div class="profile-socials"><a aria-label="Email" href="mailto:muhammad.ishaq@maine.edu"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m3 6 9 7 9-7"></path></svg></a><a aria-label="GitHub" href="https://github.com/ahmadishaq3911-alt"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="M9 20c-5 1-5-3-7-3m14 6v-4a3.5 3.5 0 0 0-1-3c4-.5 6-2 6-6a5 5 0 0 0-1.5-3.5A5 5 0 0 0 19 3s-2 0-4 1a13 13 0 0 0-6 0C7 3 5 3 5 3a5 5 0 0 0-.5 3.5A5 5 0 0 0 3 10c0 4 2 5.5 6 6a3.5 3.5 0 0 0-1 3v4"></path></svg></a><a aria-label="LinkedIn" href="https://www.linkedin.com/in/muhammad-ahmad-ishaq-8b7ab3203/"><b>in</b></a><a aria-label="Google Scholar" href="https://scholar.google.com/citations?user=1CxezRQAAAAJ"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></a></div><a class="profile-contact" href="#contact">Let’s connect</a></div><div class="bio-column"><h2 class="icon-heading"><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><circle cx="8" cy="10" r="2"></circle><path d="M5 16q3-4 6 0M14 8h4m-4 4h4m-4 4h4"></path></svg></span>Professional Summary</h2><p class="bio-text">I am a Physics Ph.D. candidate at the University of Maine, working with Dr. Dinh Loc Duong. My research explores how neighboring materials can change graphene’s electronic properties, with the goal of enabling lower-power electronics. I use first-principles calculations to study spin–orbit coupling, magnetism, and proximity effects in two-dimensional materials. My background spans semiconductor alloys, energy-storage materials, and university teaching. Outside the lab, I enjoy badminton, swimming, and table tennis.</p><a class="cv-download" download="" href="files/Muhammad_Ahmad_Ishaq_Academic_CV.pdf"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8l-5-5Zm0 0v6h5M12 12v6m-3-3 3 3 3-3"></path></svg>Download CV</a> <a class="cv-download" href="files/Muhammad_Ahmad_Ishaq_Industry_Resume.pdf">Industry résumé</a><h2 class="icon-heading education-heading"><span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></span>Education</h2><div class="education-cards"><article><span class="degree-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></span><div><h3>Ph.D. in Physics</h3><p>University of Maine</p><small>Expected December 2027</small></div></article><article><span class="degree-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></span><div><h3>M.Phil. in Applied Physics</h3><p>University of Engineering and Technology, Lahore</p><small>2017–2019</small></div></article><article><span class="degree-icon"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v6l6 3 6-3v-6M22 9v7"></path></svg></span><div><h3>BS (Hons.) in Physics</h3><p>University of Education, Lahore</p><small>2013–2017</small></div></article></div>
+
+
 <section aria-labelledby="research-interests-heading" id="research-interests">
+
+
 <h3 class="interest-heading" id="research-interests-heading">
-<span aria-hidden="true" class="interest-heading-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1"></path><circle cx="12" cy="12" r="4"></circle></svg></span>
+
+
+<span aria-hidden="true" class="interest-heading-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1"></path><circle cx="12" cy="12" r="4"></circle></svg></span>
+
+
     Interests
+
+
   </h3>
+
+
 <div aria-label="Research and technology interests" class="interest-chips">
+
+
 <span class="interest-chip accent">Low-Power Electronics</span>
+
+
 <span class="interest-chip accent">2D Quantum Materials</span>
+
+
 <span class="interest-chip">Density Functional Theory</span>
+
+
 <span class="interest-chip">Graphene Interfaces</span>
+
+
 <span class="interest-chip">Spin–Orbit Coupling</span>
+
+
 <span class="interest-chip">Magnetic Proximity</span>
+
+
 <span class="interest-chip">Topological Electronics</span>
+
+
 <span class="interest-chip">Semiconductor Devices</span>
+
+
 <span class="interest-chip">High-Performance Computing</span>
+
+
 <span class="interest-chip">Digital Electronics</span>
+
+
 <span class="interest-chip">Scientific Instrumentation</span>
+
+
 </div>
+
+
 </section>
+
+
 </div></section><section class="block wrap research-focused" id="projects">
+
+
 <div class="research-intro"><span class="research-kicker">CURRENT DOCTORAL RESEARCH</span><h2>My Research</h2><p>How can atomic-scale interactions help us design more energy-efficient electronic materials?</p></div>
+
+
 <div class="research-two-col"><div class="research-narrative">
+
+
 <p>I am a Physics Ph.D. researcher at the University of Maine, working with Dr. Dinh Loc Duong on <strong>graphene and magnetic two-dimensional materials</strong>. My work explores how neighboring layers influence electronic bands, spin–orbit interactions, and magnetic proximity.</p>
+
+
 <p>I use <strong>density functional theory (DFT)</strong> and high-performance computing to investigate electronic structure and understand how interfaces change material behavior. I am particularly interested in how this physics could inform <strong>low-power electronics</strong>.</p>
+
+
 <p>The possibility of <strong>unidirectional topological edge transport</strong> motivates my long-term research. This is an objective under investigation, not a confirmed result.</p>
+
+
 <a class="research-link" href="projects/graphene-proximity.html">Explore the Ph.D. project →</a>
-</div><figure class="research-picture"><a href="assets/images/graphene-wse2-qahe-3d-concept.webp" rel="noopener noreferrer" target="_blank"><img alt="Conceptual 3D graphene and neighboring two-dimensional-material interface" loading="lazy" src="assets/images/graphene-wse2-qahe-3d-concept.webp"/></a><figcaption>Conceptual scientific illustration—not an optimized atomic geometry or a demonstrated topological state.</figcaption></figure>
+
+
+</div><figure class="research-picture"><a href="assets/images/quantum-hero.webp" rel="noopener noreferrer" target="_blank"><img alt="Conceptual 3D graphene and neighboring two-dimensional-material interface" loading="lazy" src="assets/images/quantum-hero.webp" width="1752" height="897" decoding="async"></a><figcaption>Conceptual scientific illustration—not an optimized atomic geometry or a demonstrated topological state.</figcaption></figure>
+
+
 </div></section><section class="block wrap papers-focused" id="publications">
+
+
 <div class="papers-intro"><span class="papers-kicker">PEER-REVIEWED RESEARCH</span><h2>Publications</h2><p>Selected journal articles in computational semiconductor physics and energy-storage materials.</p></div>
+
+
 <div class="papers-compact-list"><article class="paper-compact">
+
+
 <span class="paper-yr">2022</span>
+
+
 <div><h3><a href="https://doi.org/10.1140/epjb/s10051-022-00287-z" rel="noopener noreferrer" target="_blank">Correlation between structural, electronic, and optical response of Ga-doped AlSb for optoelectronic applications: a first principle study</a></h3>
+
+
 <p>Shafqat Nabi, Abdul Waheed Anwar, Zafar Wazir, Sardar Sikandar Hayat, <strong>Muhammad Ahmad</strong>, et al.</p><p><em>The European Physical Journal B</em> · 95, 55 (2022)</p>
-<div class="paper-links"><a href="https://doi.org/10.1140/epjb/s10051-022-00287-z" rel="noopener noreferrer" target="_blank">DOI ↗</a><a aria-label="Open article PDF in a new tab" href="files/ga-doped-alsb-2022.pdf" rel="noopener noreferrer" target="_blank">Read PDF ↗</a><a href="projects/ga-alsb.html">Research details ↗</a></div></div></article><article class="paper-compact">
+
+
+<div class="paper-links"><a href="https://doi.org/10.1140/epjb/s10051-022-00287-z" rel="noopener noreferrer" target="_blank">DOI ↗</a><a href="https://link.springer.com/content/pdf/10.1140/epjb/s10051-022-00287-z.pdf" rel="noopener noreferrer" target="_blank">Publisher PDF ↗</a><a href="projects/ga-alsb.html">Research details ↗</a></div></div></article><article class="paper-compact">
+
+
 <span class="paper-yr">2022</span>
+
+
 <div><h3><a href="https://doi.org/10.1016/j.inoche.2022.109201" rel="noopener noreferrer" target="_blank">Fabrication and characterizations of hybrid materials based on polyaniline, metal oxide, and graphene nano-platelets for supercapacitor electrodes</a></h3>
+
+
 <p>Kashif Iqbal, <strong>Muhammad Ahmad Ishaq</strong>, Ali Ahmad, Muhammad Danish Ali, et al.</p><p><em>Inorganic Chemistry Communications</em> · 137, 109201 (2022)</p>
-<div class="paper-links"><a href="https://doi.org/10.1016/j.inoche.2022.109201" rel="noopener noreferrer" target="_blank">DOI ↗</a><a aria-label="Open article PDF in a new tab" href="files/supercapacitor-electrodes-2022.pdf" rel="noopener noreferrer" target="_blank">Read PDF ↗</a><a href="projects/supercapacitor.html">Research details ↗</a></div></div></article></div><div class="papers-footer"><a href="publications.html">All publication details →</a></div>
+
+
+<div class="paper-links"><a href="https://doi.org/10.1016/j.inoche.2022.109201" rel="noopener noreferrer" target="_blank">DOI ↗</a><a href="https://www.sciencedirect.com/science/article/pii/S1387700322000090/pdfft" rel="noopener noreferrer" target="_blank">Publisher PDF ↗</a><a href="projects/supercapacitor.html">Research details ↗</a></div></div></article></div><div class="papers-footer"><a href="publications.html">All publication details →</a></div>
+
+
 </section><section aria-labelledby="career-skills-title" class="career-skills block wrap" id="skills">
+
+
 <header class="career-section-heading"><p class="career-eyebrow">TOOLS &amp; TECHNICAL CAPABILITIES</p><h2 id="career-skills-title">Skills</h2><p>Tools I use to model materials, build electronics, and turn measurements into useful results.</p></header>
+
+
 <div class="career-skills-inner">
+
+
 <div class="career-group"><h3><span>01</span> Computational materials &amp; HPC</h3><div class="career-tools"><article aria-label="Python: Scientific scripting · intermediate" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-gold">Py</span><strong>Python</strong><small>Scientific scripting · intermediate</small></article>
+
+
 <article aria-label="Density Functional Theory: Electronic-structure modeling" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-forest">DFT</span><strong>Density Functional Theory</strong><small>Electronic-structure modeling</small></article>
+
+
 <article aria-label="OpenMX: 2D materials simulations" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-blue">MX</span><strong>OpenMX</strong><small>2D materials simulations</small></article>
+
+
 <article aria-label="QuantumATK: Device &amp; materials modeling" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-violet">ATK</span><strong>QuantumATK</strong><small>Device &amp; materials modeling</small></article>
+
+
 <article aria-label="HPC / Slurm: Parallel jobs · cluster workflows" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-forest">HPC</span><strong>HPC / Slurm</strong><small>Parallel jobs · cluster workflows</small></article>
+
+
 <article aria-label="VASP: First-principles simulations" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-blue">V</span><strong>VASP</strong><small>First-principles simulations</small></article>
-<article aria-label="WIEN2k: Basic familiarity" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-bronze">W2k</span><strong>WIEN2k</strong><small>Basic familiarity</small></article>
+
+
+<article aria-label="WIEN2k: Beginner familiarity" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-bronze">W2k</span><strong>WIEN2k</strong><small>Beginner familiarity</small></article>
+
+
 <article aria-label="Band-Structure Analysis: SOC · valleys · convergence" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-violet">E(k)</span><strong>Band-Structure Analysis</strong><small>SOC · valleys · convergence</small></article></div></div>
+
+
 <div class="career-group"><h3><span>02</span> Electronics &amp; laboratory methods</h3><div class="career-tools"><article aria-label="PASCO Capstone: Sensors &amp; data acquisition" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-blue">P</span><strong>PASCO Capstone</strong><small>Sensors &amp; data acquisition</small></article>
+
+
 <article aria-label="Arduino UNO: Prototyping &amp; sensing" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-teal">∞</span><strong>Arduino UNO</strong><small>Prototyping &amp; sensing</small></article>
+
+
 <article aria-label="Digital Electronics: Logic circuits &amp; testing" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-bronze">01</span><strong>Digital Electronics</strong><small>Logic circuits &amp; testing</small></article>
+
+
 <article aria-label="Lab Data Analysis: Measurement · graphing" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-forest">DAQ</span><strong>Lab Data Analysis</strong><small>Measurement · graphing</small></article>
+
+
 <article aria-label="SEM: Materials imaging" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-violet">SEM</span><strong>SEM</strong><small>Materials imaging</small></article>
+
+
 <article aria-label="Contact-Angle Testing: Wetting &amp; surface analysis" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-teal">θ</span><strong>Contact-Angle Testing</strong><small>Wetting &amp; surface analysis</small></article>
+
+
 <article aria-label="Cleanroom Training: Microfabrication awareness" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-blue">CR</span><strong>Cleanroom Training</strong><small>Microfabrication awareness</small></article>
+
+
 <article aria-label="Ultrasonic Sensing: Arduino scanner project" class="career-tool" tabindex="0"><span aria-hidden="true" class="career-tool-icon tone-gold">US</span><strong>Ultrasonic Sensing</strong><small>Arduino scanner project</small></article></div></div>
+
+
 </div>
+
+
 </section>
+
+
 <section aria-labelledby="career-experience-title" class="career-experience" id="experience">
+
+
 <div class="career-experience-inner">
+
+
 <header class="career-section-heading"><p class="career-eyebrow">RESEARCH · INSTRUMENTATION · ELECTRONICS</p><h2 id="career-experience-title">Research &amp; Applied Experience</h2><p>Practical work in computational modeling, laboratory instrumentation, technical problem-solving, and physics education.</p></header>
-<div class="career-timeline"><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">RESEARCH &amp; SIMULATION</span><time>2025 — Present</time></div><h3>Doctoral Researcher · Computational Materials</h3><p class="career-org">University of Maine · Orono, ME</p><ul><li>Run first-principles calculations with OpenMX and QuantumATK on Slurm-managed HPC systems.</li><li>Build and compare graphene-interface models, check numerical convergence, and analyze electronic bands, spin–orbit interactions, and magnetic proximity.</li><li>Document simulation settings and interpret results for low-power semiconductor research.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">COMPUTATIONAL R&amp;D</span><time>2023</time></div><h3>Graduate Research Assistant · Electronic Materials</h3><p class="career-org">University of Maine · Orono, ME</p><ul><li>Used VASP and HPC resources to investigate phase-change materials and electronic properties.</li><li>Organized simulation inputs and outputs for reproducible analysis and group discussion.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">INSTRUMENTATION &amp; DATA</span><time>2023 — Present</time></div><h3>Physics Laboratory Teaching Assistant</h3><p class="career-org">University of Maine · Orono, ME</p><ul><li>Guide students through PASCO Capstone workflows: sensor setup, data capture, graphing, and experimental analysis.</li><li>Troubleshoot lab measurements in mechanics and energy experiments; assess results and communicate actionable feedback.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">APPLIED LAB PROJECT</span><time>2024</time></div><h3>Surface &amp; Materials Laboratory Research</h3><p class="career-org">University of Maine · Orono, ME</p><ul><li>Investigated paper-surface wetting and PFAS-free surface treatments using contact-angle measurements and laboratory characterization.</li><li>Communicated experimental work in a poster at the 2024 Rural Issues Symposium.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">TECHNICAL EDUCATION</span><time>May — Dec 2022</time></div><h3>Physics Lecturer</h3><p class="career-org">University of Chenab · Gujrat, Pakistan</p><ul><li>Delivered physics teaching with applied problem-solving and laboratory demonstrations.</li><li>Helped students connect physical models to practical measurements and engineering use cases.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">ELECTRONICS &amp; LAB TEACHING</span><time>Feb 2020 — 2022</time></div><h3>Physics Lecturer</h3><p class="career-org">University of Lahore · Gujrat, Pakistan</p><ul><li>Taught physics and supported digital-electronics learning through circuit concepts and hands-on laboratory work.</li><li>Mentored student projects, troubleshooting, and scientific reasoning.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">ENGINEERING FOUNDATIONS</span><time>Aug 2017 — Feb 2020</time></div><h3>Physics Lecturer</h3><p class="career-org">Government College of Technology · Lahore, Pakistan</p><ul><li>Taught applied physics in a technical-college setting, emphasizing experimental methods and problem-solving.</li><li>Connected mechanics, electricity, and measurement concepts with practical technical applications.</li></ul></article></div>
+
+
+<div class="career-timeline"><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">RESEARCH &amp; SIMULATION</span><time>2025 — Present</time></div><h3>Doctoral Researcher · Computational Materials</h3><p class="career-org">University of Maine · Orono, ME</p><ul><li>Run first-principles calculations with OpenMX and QuantumATK on Slurm-managed HPC systems.</li><li>Build and compare graphene-interface models, check numerical convergence, and analyze electronic bands, spin–orbit interactions, and magnetic proximity.</li><li>Document simulation settings and interpret results for low-power semiconductor research.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">COMPUTATIONAL R&amp;D</span><time>2023</time></div><h3>Graduate Research Assistant · Electronic Materials</h3><p class="career-org">University of Maine · Orono, ME</p><ul><li>Used VASP and HPC resources to investigate phase-change materials and electronic properties.</li><li>Organized simulation inputs and outputs for reproducible analysis and group discussion.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">INSTRUMENTATION &amp; DATA</span><time>2023 — Present</time></div><h3>Physics Laboratory Teaching Assistant</h3><p class="career-org">University of Maine · Orono, ME</p><ul><li>Guide students through PASCO Capstone workflows: sensor setup, data capture, graphing, and experimental analysis.</li><li>Troubleshoot lab measurements in mechanics and energy experiments; assess results and communicate actionable feedback.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">APPLIED LAB PROJECT</span><time>2024</time></div><h3>Surface &amp; Materials Laboratory Research</h3><p class="career-org">University of Maine · Orono, ME</p><ul><li>Investigated paper-surface wetting and PFAS-free surface treatments using contact-angle measurements and laboratory characterization.</li><li>Communicated experimental work in a poster at the 2024 Rural Issues Symposium.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">TECHNICAL EDUCATION</span><time>May — Dec 2022</time></div><h3>Physics Lecturer</h3><p class="career-org">University of Chenab · Gujrat, Pakistan</p><ul><li>Delivered physics teaching with applied problem-solving and laboratory demonstrations.</li><li>Helped students connect physical models to practical measurements and engineering use cases.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">ELECTRONICS &amp; LAB TEACHING</span><time>Feb 2020 — May 2022</time></div><h3>Physics Lecturer</h3><p class="career-org">University of Lahore · Gujrat, Pakistan</p><ul><li>Taught physics and supported digital-electronics learning through circuit concepts and hands-on laboratory work.</li><li>Mentored student projects, troubleshooting, and scientific reasoning.</li></ul></article><article class="career-role"><span aria-hidden="true" class="career-timeline-dot"></span><div class="career-role-top"><span class="career-role-tag">ENGINEERING FOUNDATIONS</span><time>Aug 2017 — Feb 2020</time></div><h3>Physics Lecturer</h3><p class="career-org">Government College of Technology · Lahore, Pakistan</p><ul><li>Taught applied physics in a technical-college setting, emphasizing experimental methods and problem-solving.</li><li>Connected mechanics, electricity, and measurement concepts with practical technical applications.</li></ul></article></div>
+
+
 <p class="career-disclaimer">Project work and laboratory instruction are identified separately from employed research and teaching roles. <a href="experience.html">See complete education and experience →</a></p>
+
+
 </div>
+
+
 </section><section aria-labelledby="lab-projects-title" class="lab-projects-showcase" id="hands-on">
+
+
 <div class="lab-projects-container">
+
+
 <header class="lab-projects-heading">
+
+
 <p class="lab-projects-eyebrow">PRACTICAL ELECTRONICS &amp; INSTRUMENTATION</p>
+
+
 <h2 id="lab-projects-title">Projects</h2>
+
+
 <p>Hands-on work connecting physical concepts to functional hardware, measurements, and simple prototypes.</p>
+
+
 </header>
+
+
 <div class="lab-projects-grid">
+
+
 <a aria-label="View Arduino ultrasonic scanner project details and presentation" class="lab-project-card" href="projects/arduino-radar.html">
+
+
 <div class="lab-project-photo">
-<img alt="Arduino ultrasonic scanner visualization showing detected object locations in Processing" height="450" loading="lazy" src="assets/images/radar/processing-display.png" width="720"/>
+
+
+<img alt="Arduino ultrasonic scanner visualization showing detected object locations in Processing" height="736" loading="lazy" src="assets/images/radar/processing-display.png" width="1189" decoding="async">
+
+
 </div>
+
+
 <div class="lab-project-content">
+
+
 <span class="lab-project-category">Embedded Systems · Sensors</span>
+
+
 <h3>Arduino Ultrasonic Scanner</h3>
+
+
 <p>Built a 180° scanning prototype using an Arduino UNO, ultrasonic sensor, and servo motor. Visualized object angle and distance in Processing and checked measurements against a ruler.</p>
+
+
 <div class="lab-project-bottom"><span>Arduino · Processing · Instrumentation</span><span aria-hidden="true" class="lab-project-arrow">↗</span></div>
+
+
 </div>
+
+
 </a>
+
+
 <a aria-label="View digital electronics circuits and diagrams" class="lab-project-card" href="projects/digital-electronics.html">
+
+
 <div class="lab-project-photo">
-<img alt="Digital electronics prototype with components and colored jumper wires connected on breadboards" height="450" loading="lazy" src="assets/images/electronics-breadboard.png" width="720"/>
+
+
+<img alt="Digital electronics prototype with components and colored jumper wires connected on breadboards" height="4032" loading="lazy" src="assets/images/electronics-breadboard.png" width="3024" decoding="async">
+
+
 </div>
+
+
 <div class="lab-project-content">
+
+
 <span class="lab-project-category">Circuit Design · Prototyping</span>
+
+
 <h3>Digital Logic Circuits</h3>
+
+
 <p>Designed and tested gate-based adders, subtractors, and flip-flops using breadboards, logic components, and LEDs. Includes circuit diagrams and a working logic demonstration.</p>
+
+
 <div class="lab-project-bottom"><span>Digital Electronics · Breadboard</span><span aria-hidden="true" class="lab-project-arrow">↗</span></div>
+
+
 </div>
+
+
 </a>
+
+
 </div>
+
+
 </div>
+
+
 </section><section aria-labelledby="talks-heading" class="portfolio-showcase" id="talks">
+
+
 <header class="showcase-heading"><p class="showcase-kicker">SHARING RESEARCH</p><h2 id="talks-heading">Recent Talks</h2><p>Research presentations, group talks, and posters. Materials are linked when publicly available.</p></header>
+
+
 <div class="showcase-carousel-shell"><div aria-label="Research talks carousel" class="showcase-carousel" id="portfolio-talks-list"></div>
+
+
 <div class="showcase-carousel-actions"><button aria-label="Previous talks" class="showcase-arrow" id="portfolio-talks-prev" type="button">‹</button><div aria-hidden="true" class="showcase-scroll-track"><span id="portfolio-talks-progress"></span></div><button aria-label="Next talks" class="showcase-arrow" id="portfolio-talks-next" type="button">›</button></div></div>
+
+
 </section><section aria-labelledby="hobbies-heading" class="portfolio-showcase" id="hobbies">
+
+
 <header class="showcase-heading"><p class="showcase-kicker">BEYOND RESEARCH</p><h2 id="hobbies-heading">Hobbies</h2><p>Activities I enjoy outside the lab—from sports to friendly competition.</p></header>
+
+
 <div class="showcase-grid" id="portfolio-hobbies-list"></div>
+
+
 </section><section aria-labelledby="gallery-highlights-heading" class="portfolio-showcase" id="gallery-highlights">
+
+
 <header class="showcase-heading"><p class="showcase-kicker">MOMENTS &amp; PROJECTS</p><h2 id="gallery-highlights-heading">Gallery</h2><p>A growing collection of laboratory projects, research visuals, and future academic events.</p></header>
+
+
 <div class="showcase-gallery-grid" id="portfolio-gallery-list"></div>
+
+
 <p class="showcase-note">Project images and illustrations are labeled. Event and conference photos can be added later.</p>
+
+
 </section><section aria-labelledby="certificates-heading" class="portfolio-showcase" id="certificates">
+
+
 <header class="showcase-heading"><p class="showcase-kicker">TRAINING &amp; DEVELOPMENT</p><h2 id="certificates-heading">Certificates</h2><p>Professional learning and verified training records.</p></header>
+
+
 <div class="showcase-grid showcase-certificate-content" id="portfolio-certificates-list"></div>
+
+
 <div class="showcase-empty" id="portfolio-certificates-empty"><strong>Training records and certificates</strong><p>Selected certificates will be displayed here as documentation becomes available.</p></div>
+
+
 </section>
-<section class="finish-section finish-recs" id="recommendations" aria-labelledby="references-title">
+
+
+<section class="finish-section" id="teaching" aria-labelledby="teaching-title"><div class="finish-container"><header class="finish-heading"><p class="finish-kicker">PHYSICS · INSTRUMENTATION · MENTORSHIP</p><h2 id="teaching-title">Teaching through practical physics</h2><p>I help students connect physical models with measurements, using PASCO Capstone, laboratory instrumentation, and digital electronics.</p></header><p class="section-link"><a class="finish-primary-btn" href="teaching.html">Explore my teaching →</a></p></div></section><section class="finish-section finish-recs" id="recommendations" aria-labelledby="references-title">
+
+
   <div class="finish-container">
+
+
     <header class="finish-heading">
+
+
       <p class="finish-kicker">ACADEMIC REFERENCES &amp; RECOGNITION</p>
+
+
       <h2 id="references-title">Recommendations &amp; recognition</h2>
+
+
       <p>Perspectives on my research, scientific contributions, and academic progress.</p>
+
+
     </header>
-    <div class="finish-rec-grid">
-      <article class="finish-rec-card">
-        <div class="finish-rec-top"><span class="finish-rec-label">Research supervision</span><span class="finish-rec-date">Aug 2025</span></div>
-        <h3>Rigorous first-principles research</h3>
-        <p>Dr. Yu endorsed the rigor and relevance of my VASP simulations on HPC systems during my 2023 research assistantship, supporting research on solid–solid phase transitions.</p>
-        <div class="finish-rec-author"><span class="finish-author-icon" aria-hidden="true">LY</span><span><strong>Dr. Liping Yu</strong><small>Associate Professor · University of Central Florida</small></span></div>
-      </article>
-      <article class="finish-rec-card">
-        <div class="finish-rec-top"><span class="finish-rec-label">Independent research citation</span><span class="finish-rec-date">Aug 2025</span></div>
-        <h3>Impact in semiconductor research</h3>
-        <p>Dr. Akhtar cited our published Ga-doped AlSb study as relevant to understanding how dopants can change the structural and electronic properties of materials.</p>
-        <div class="finish-rec-author"><span class="finish-author-icon" aria-hidden="true">MA</span><span><strong>Dr. Majid Niaz Akhtar</strong><small>Associate Professor · Islamia University of Bahawalpur</small></span></div>
-      </article>
-      <article class="finish-rec-card">
-        <div class="finish-rec-top"><span class="finish-rec-label">Independent research citation</span><span class="finish-rec-date">Aug 2025</span></div>
-        <h3>Recognition in energy-storage research</h3>
-        <p>Professor Rahman referenced our published work on hybrid supercapacitor electrodes in a 2024 book chapter about conductive-polymer nanocomposites.</p>
-        <div class="finish-rec-author"><span class="finish-author-icon" aria-hidden="true">MR</span><span><strong>Prof. Dr. Md Mostafizur Rahman</strong><small>Chemical Engineering · Shahjalal University of Science and Technology</small></span></div>
-      </article>
-      <article class="finish-rec-card">
-        <div class="finish-rec-top"><span class="finish-rec-label">Doctoral standing</span><span class="finish-rec-date">Jul 2025</span></div>
-        <h3>Research and academic progress</h3>
-        <p>Professors Hess and Thompson documented my doctoral enrollment, good standing, and teaching and research appointments at the University of Maine.</p>
-        <div class="finish-rec-author"><span class="finish-author-icon" aria-hidden="true">UM</span><span><strong>Prof. Samuel T. Hess &amp; Prof. John R. Thompson</strong><small>Physics and Astronomy · University of Maine</small></span></div>
-      </article>
-    </div>
+
+
+    <div class="finish-rec-grid" id="portfolio-recommendations-list">
+
+
+      <noscript><p>Read the <a href="experience.html#recommendations">recommendation summaries</a> on the experience page.</p></noscript></div>
+
+
     <p class="finish-clarification">Summaries of supplied letters and scholarly citations; not verbatim endorsements. Independent citations are not personal recommendations.</p>
+
+
   </div>
+
+
 </section>
-<section class="finish-section finish-about" id="motivation" aria-labelledby="about-title">
-  <div class="finish-container">
-    <header class="finish-heading">
-      <p class="finish-kicker">MORE ABOUT ME</p>
-      <h2 id="about-title">The person behind the research</h2>
-      <p>Curiosity, hands-on learning, and a passion for practical physics.</p>
-    </header>
-    <div class="finish-about-grid">
-      <article class="finish-about-card">
-        <div class="finish-about-icon" aria-hidden="true">⚛</div>
-        <h3>From physics to real devices</h3>
-        <p>I'm pursuing a Ph.D. in Physics at the University of Maine with Dr. Dinh Loc Duong. My work connects first-principles calculations with questions in quantum materials, semiconductors, and future electronics.</p>
-        <a class="finish-text-link" href="experience.html">Explore my background <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="finish-about-card">
-        <div class="finish-about-icon" aria-hidden="true">↗</div>
-        <h3>Research with practical impact</h3>
-        <p>My experience spans semiconductor simulations, materials research, laboratory teaching, and electronics projects. I am especially interested in internships in semiconductor R&amp;D and computational materials.</p>
-        <a class="finish-text-link" href="files/Muhammad_Ahmad_Ishaq_CV.pdf">View my academic CV <span aria-hidden="true">→</span></a>
-      </article>
-    </div>
-  </div>
-</section>
+
+
+
+
+
 <section class="finish-contact" id="contact" aria-labelledby="contact-title">
+
+
   <div class="finish-contact-main">
-    <img src="assets/images/profile.webp" alt="Portrait of Muhammad Ahmad Ishaq" class="finish-contact-avatar" loading="lazy"/>
+
+
+    <img src="assets/images/profile.webp" alt="Portrait of Muhammad Ahmad Ishaq" class="finish-contact-avatar" loading="lazy" width="1087" height="1087" decoding="async">
+
+
     <p class="finish-kicker">OPEN TO RESEARCH COLLABORATION &amp; 2027 INTERNSHIPS</p>
+
+
     <h2 id="contact-title">Let's connect.</h2>
+
+
     <p class="finish-contact-intro">Interested in semiconductor materials, computational physics, or a research collaboration? I'd be happy to connect.</p>
+
+
     <div class="finish-contact-actions">
-      <a class="finish-primary-btn" href="mailto:muhammad.ishaq@maine.edu">✉ &nbsp; Email me</a>
+
+
+      <a class="finish-primary-btn" href="mailto:muhammad.ishaq@maine.edu">✉   Email me</a>
+
+
       <a class="finish-outline-btn" href="https://www.linkedin.com/in/muhammad-ahmad-ishaq-8b7ab3203/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
+
       <a class="finish-outline-btn" href="https://github.com/ahmadishaq3911-alt" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
+
     </div>
+
+
     <p class="finish-email">muhammad.ishaq@maine.edu</p>
+
+
   </div>
+
+
   <footer class="finish-footer">
+
+
     <span>© 2026 Muhammad Ahmad Ishaq · Orono, Maine</span>
+
+
     <nav aria-label="Footer links"><a href="projects.html">Projects</a><a href="teaching.html">Teaching</a><a href="gallery.html">Gallery</a><a href="sources.html">Image credits</a><a href="#home">Back to top ↑</a></nav>
+
+
   </footer>
-</section></main></div><dialog aria-labelledby="search-heading" class="academic-search" data-prefix="" data-site-search=""><div class="search-title"><h2 id="search-heading">Search this website</h2><button aria-label="Close search" data-search-close="" type="button">×</button></div><label for="site-query">Find research, papers, projects, and people</label><input autocomplete="off" id="site-query" placeholder="Try graphene, teaching, or recommendations…" type="search"/><div aria-live="polite" class="search-results"></div></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div><script id="profile-focus-rotation">
+
+
+</section></main></div><dialog aria-labelledby="search-heading" class="academic-search" data-prefix="" data-site-search=""><div class="search-title"><h2 id="search-heading">Search this website</h2><button aria-label="Close search" data-search-close="" type="button">×</button></div><label for="site-query">Find research, papers, projects, and people</label><input autocomplete="off" id="site-query" placeholder="Try graphene, teaching, or recommendations…" type="search"><div aria-live="polite" class="search-results"></div></dialog><div aria-live="polite" class="toast" id="toast" role="status"></div><script id="profile-focus-rotation">
+
+
 /* Each specialty types in, pauses, erases, and cycles. No external libraries required. */
+
+
 (function(){
+
+
   var output=document.getElementById('profile-focus-text');
+
+
   if(!output) return;
+
+
   var topics=[
+
+
     '2D Quantum Materials',
+
+
     'Low-Power Electronics',
+
+
     'Density Functional Theory',
+
+
     'Graphene & Magnetic 2D Interfaces',
+
+
     'Spin–Orbit Coupling',
+
+
     'Magnetic Proximity Effects',
+
+
     'High-Performance Computing'
+
+
   ];
+
+
   if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+
+
     output.textContent=topics[0];
+
+
     return;
+
+
   }
+
+
   var idx=0, length=topics[0].length, deleting=true;
+
+
   function step(){
+
+
     var topic=topics[idx];
+
+
     if(deleting){
+
+
       if(length>0){length--; output.textContent=topic.slice(0,length); setTimeout(step,42);}
+
+
       else {deleting=false; idx=(idx+1)%topics.length; setTimeout(step,250);}
+
+
     } else {
+
+
       topic=topics[idx];
+
+
       if(length<topic.length){length++; output.textContent=topic.slice(0,length); setTimeout(step,82);}
+
+
       else {deleting=true; setTimeout(step,2000);}
+
+
     }
+
+
   }
+
+
   setTimeout(step,2200);
+
+
 })();
+
+
 </script>
+
+
 </body></html>
